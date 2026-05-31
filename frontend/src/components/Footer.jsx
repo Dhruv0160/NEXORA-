@@ -22,14 +22,14 @@ const Footer = () => {
   return (
     <footer className="relative bg-neutral-950 text-neutral-300 overflow-hidden">
       {/* Decorative gradient orb */}
-      <div className="absolute -top-40 left-1/2 -translate-x-1/2 w-[800px] h-[400px] bg-gradient-to-r from-violet-600/20 via-indigo-600/20 to-fuchsia-600/20 blur-3xl rounded-full pointer-events-none" />
+      <div className="absolute -top-40 left-1/2 -translate-x-1/2 w-[800px] h-[400px] bg-gradient-to-r from-blue-600/20 via-indigo-600/20 to-indigo-600/20 blur-3xl rounded-full pointer-events-none" />
 
       {/* CTA Strip */}
       <div className="relative border-b border-white/5">
         <div className="max-w-[1400px] mx-auto px-6 lg:px-8 py-14 grid md:grid-cols-2 gap-8 items-center">
           <div>
             <h3 className="text-2xl md:text-4xl font-bold text-white leading-tight tracking-tight">
-              Ready to ship AI that <span className="bg-gradient-to-r from-violet-400 to-fuchsia-400 bg-clip-text text-transparent">moves a metric?</span>
+              Ready to ship AI that <span className="bg-gradient-to-r from-blue-400 to-indigo-400 bg-clip-text text-transparent">moves a metric?</span>
             </h3>
             <p className="mt-3 text-neutral-400">
               Let's design a 2-week prototype together.
@@ -38,7 +38,7 @@ const Footer = () => {
           <div className="flex md:justify-end">
             <Link
               to="/contact"
-              className="inline-flex items-center gap-2 bg-white text-neutral-950 font-semibold rounded-full px-7 h-12 hover:bg-violet-100 transition-colors"
+              className="inline-flex items-center gap-2 bg-white text-neutral-950 font-semibold rounded-full px-7 h-12 hover:bg-blue-100 transition-colors"
             >
               Book a Discovery Call
               <ArrowRight className="w-4 h-4" />
@@ -50,18 +50,17 @@ const Footer = () => {
       <div className="relative max-w-[1400px] mx-auto px-6 lg:px-8 py-16">
         <div className="grid lg:grid-cols-5 gap-10">
           <div className="lg:col-span-2">
-            <div className="flex items-center gap-2.5">
-              <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-violet-600 via-indigo-600 to-fuchsia-600 flex items-center justify-center shadow-lg shadow-violet-900/40">
-                <Sparkles className="w-5 h-5 text-white" />
+            <div className="flex items-center gap-3">
+              <div className="bg-white rounded-xl p-2 inline-flex">
+                <img
+                  src="https://customer-assets.emergentagent.com/job_nexora-ai-25/artifacts/w563sbi0_image.png"
+                  alt="Nexora"
+                  className="h-8 w-auto object-contain"
+                />
               </div>
-              <div>
-                <div className="text-[24px] font-bold tracking-tight text-white leading-none">
-                  Nexora<span className="text-violet-400">.</span>
-                </div>
-                <p className="text-[9px] uppercase tracking-[0.2em] text-neutral-500 mt-1">
-                  AI Solutions
-                </p>
-              </div>
+              <p className="text-[10px] uppercase tracking-[0.2em] text-neutral-500 border-l border-white/10 pl-3">
+                AI Solutions
+              </p>
             </div>
             <p className="mt-5 text-sm text-neutral-400 leading-relaxed max-w-md">
               We design, engineer and operate AI systems that compound business
@@ -69,13 +68,13 @@ const Footer = () => {
               recommendation engines.
             </p>
             <div className="flex items-center gap-3 mt-6">
-              <a href={social.linkedin} target="_blank" rel="noreferrer" className="w-9 h-9 rounded-full border border-white/10 flex items-center justify-center text-neutral-400 hover:text-white hover:bg-violet-600 hover:border-violet-600 transition-colors">
+              <a href={social.linkedin} target="_blank" rel="noreferrer" className="w-9 h-9 rounded-full border border-white/10 flex items-center justify-center text-neutral-400 hover:text-white hover:bg-blue-600 hover:border-blue-600 transition-colors">
                 <Linkedin className="w-4 h-4" />
               </a>
-              <a href={social.twitter} target="_blank" rel="noreferrer" className="w-9 h-9 rounded-full border border-white/10 flex items-center justify-center text-neutral-400 hover:text-white hover:bg-violet-600 hover:border-violet-600 transition-colors">
+              <a href={social.twitter} target="_blank" rel="noreferrer" className="w-9 h-9 rounded-full border border-white/10 flex items-center justify-center text-neutral-400 hover:text-white hover:bg-blue-600 hover:border-blue-600 transition-colors">
                 <Twitter className="w-4 h-4" />
               </a>
-              <a href={social.instagram} target="_blank" rel="noreferrer" className="w-9 h-9 rounded-full border border-white/10 flex items-center justify-center text-neutral-400 hover:text-white hover:bg-violet-600 hover:border-violet-600 transition-colors">
+              <a href={social.instagram} target="_blank" rel="noreferrer" className="w-9 h-9 rounded-full border border-white/10 flex items-center justify-center text-neutral-400 hover:text-white hover:bg-blue-600 hover:border-blue-600 transition-colors">
                 <Instagram className="w-4 h-4" />
               </a>
             </div>
@@ -117,7 +116,7 @@ const Footer = () => {
           {offices.map((o) => (
             <div key={o.city} className="text-sm">
               <div className="flex items-center gap-2 text-white font-semibold">
-                <MapPin className="w-4 h-4 text-violet-400" />
+                <MapPin className="w-4 h-4 text-blue-400" />
                 {o.city}
               </div>
               <p className="text-neutral-400 mt-2 leading-relaxed">{o.address}</p>

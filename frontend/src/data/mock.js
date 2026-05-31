@@ -227,9 +227,9 @@ export const useCases = [
 ];
 
 export const values = [
-  { title: "Outcome over Hype", icon: "Target", color: "bg-violet-100 text-violet-600", desc: "We ship AI that moves a business metric—not slide-deck demos." },
+  { title: "Outcome over Hype", icon: "Target", color: "bg-blue-100 text-blue-600", desc: "We ship AI that moves a business metric—not slide-deck demos." },
   { title: "Data Discipline", icon: "ShieldCheck", color: "bg-indigo-100 text-indigo-600", desc: "Privacy, lineage and evaluation baked into every model and pipeline." },
-  { title: "Craft", icon: "Award", color: "bg-fuchsia-100 text-fuchsia-600", desc: "From prompts to infrastructure, we obsess over the details that matter." },
+  { title: "Craft", icon: "Award", color: "bg-indigo-100 text-indigo-600", desc: "From prompts to infrastructure, we obsess over the details that matter." },
   { title: "Transparency", icon: "Eye", color: "bg-cyan-100 text-cyan-600", desc: "Honest timelines, weekly demos and clear pricing—always." },
   { title: "Partnership", icon: "Handshake", color: "bg-emerald-100 text-emerald-600", desc: "We grow with our clients—your KPI is our success metric." },
   { title: "Continuous Learning", icon: "BookOpen", color: "bg-amber-100 text-amber-600", desc: "In a field moving this fast, learning is the only durable advantage." }

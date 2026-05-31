@@ -12,11 +12,11 @@ const UseCases = () => {
     <section className="py-20 lg:py-24 bg-neutral-50">
       <div className="max-w-[1400px] mx-auto px-6 lg:px-8">
         <div className="text-center max-w-3xl mx-auto mb-12">
-          <span className="inline-block px-5 py-1.5 rounded-full bg-violet-100 text-violet-700 text-sm font-medium">
+          <span className="inline-block px-5 py-1.5 rounded-full bg-blue-100 text-blue-700 text-sm font-medium">
             What we build
           </span>
           <h2 className="mt-4 text-3xl md:text-5xl font-bold tracking-tight text-neutral-950">
-            Solutions we ship for <span className="bg-gradient-to-r from-violet-600 to-fuchsia-600 bg-clip-text text-transparent">teams like yours</span>
+            Solutions we ship for <span className="bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent">teams like yours</span>
           </h2>
           <p className="mt-4 text-neutral-600 text-lg">
             Common AI use cases we build end-to-end—tailored to your data, users
@@ -33,8 +33,8 @@ const UseCases = () => {
               className={cn(
                 "px-5 py-2.5 rounded-full text-sm font-medium transition-all border",
                 active === i
-                  ? "bg-neutral-950 text-white border-neutral-950 shadow-md shadow-violet-200"
-                  : "bg-white text-neutral-700 border-neutral-200 hover:border-violet-300"
+                  ? "bg-neutral-950 text-white border-neutral-950 shadow-md shadow-blue-200"
+                  : "bg-white text-neutral-700 border-neutral-200 hover:border-blue-300"
               )}
             >
               {c.title}
@@ -65,21 +65,21 @@ const UseCases = () => {
 
               <div className="mt-6 grid sm:grid-cols-2 gap-6">
                 <div>
-                  <h4 className="text-sm font-bold text-violet-600 mb-2">The Problem</h4>
+                  <h4 className="text-sm font-bold text-blue-600 mb-2">The Problem</h4>
                   <p className="text-sm text-neutral-600 leading-relaxed">{story.problem}</p>
                 </div>
                 <div>
-                  <h4 className="text-sm font-bold text-violet-600 mb-2">Our Approach</h4>
+                  <h4 className="text-sm font-bold text-blue-600 mb-2">Our Approach</h4>
                   <p className="text-sm text-neutral-600 leading-relaxed">{story.approach}</p>
                 </div>
               </div>
 
               <div className="mt-6">
-                <h4 className="text-sm font-bold text-violet-600 mb-3">What we deliver</h4>
+                <h4 className="text-sm font-bold text-blue-600 mb-3">What we deliver</h4>
                 <ul className="space-y-2">
                   {story.deliverables.map((r) => (
                     <li key={r} className="flex items-start gap-2 text-sm text-neutral-700">
-                      <Check className="w-4 h-4 text-violet-600 mt-0.5 flex-shrink-0" strokeWidth={3} />
+                      <Check className="w-4 h-4 text-blue-600 mt-0.5 flex-shrink-0" strokeWidth={3} />
                       {r}
                     </li>
                   ))}
@@ -88,7 +88,7 @@ const UseCases = () => {
 
               <Link
                 to="/contact"
-                className="mt-7 inline-flex items-center gap-2 bg-neutral-950 hover:bg-violet-700 text-white font-semibold px-6 h-11 rounded-full transition-colors"
+                className="mt-7 inline-flex items-center gap-2 bg-neutral-950 hover:bg-blue-700 text-white font-semibold px-6 h-11 rounded-full transition-colors"
               >
                 Discuss your version
                 <ArrowRight className="w-4 h-4" />

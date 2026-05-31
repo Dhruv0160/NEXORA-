@@ -20,7 +20,7 @@ const ServicePage = () => {
         <div className="max-w-3xl mx-auto px-6 text-center">
           <h1 className="text-3xl font-bold capitalize">{slug?.replace(/-/g, " ")}</h1>
           <p className="mt-3 text-neutral-600">This service page is coming soon.</p>
-          <Link to="/" className="mt-6 inline-block text-violet-600 font-semibold">Return Home</Link>
+          <Link to="/" className="mt-6 inline-block text-blue-600 font-semibold">Return Home</Link>
         </div>
       </section>
     );
@@ -35,12 +35,12 @@ const ServicePage = () => {
 
   return (
     <>
-      <section className="bg-gradient-to-br from-violet-50 via-white to-white py-16 lg:py-20">
+      <section className="bg-gradient-to-br from-blue-50 via-white to-white py-16 lg:py-20">
         <div className="max-w-[1400px] mx-auto px-6 lg:px-8 grid lg:grid-cols-2 gap-12 items-center">
           <div>
-            <Link to="/" className="text-sm text-violet-600 font-semibold">← Services</Link>
+            <Link to="/" className="text-sm text-blue-600 font-semibold">← Services</Link>
             <div className="mt-4 inline-flex items-center gap-3">
-              <span className="w-14 h-14 rounded-2xl bg-violet-600 text-white flex items-center justify-center">
+              <span className="w-14 h-14 rounded-2xl bg-blue-600 text-white flex items-center justify-center">
                 <Icon name={service.icon} className="w-7 h-7" />
               </span>
             </div>
@@ -49,7 +49,7 @@ const ServicePage = () => {
             </h1>
             <p className="mt-5 text-lg text-neutral-600 leading-relaxed">{service.headline}</p>
             <Link to="/contact">
-              <button className="mt-7 inline-flex items-center gap-2 bg-violet-600 hover:bg-violet-700 text-white font-semibold px-7 h-12 rounded-full transition-colors">
+              <button className="mt-7 inline-flex items-center gap-2 bg-blue-600 hover:bg-blue-700 text-white font-semibold px-7 h-12 rounded-full transition-colors">
                 {service.cta} <ArrowRight className="w-4 h-4" />
               </button>
             </Link>
@@ -59,7 +59,7 @@ const ServicePage = () => {
             <ul className="mt-4 space-y-3">
               {benefits.map((b) => (
                 <li key={b} className="flex items-start gap-3 text-sm text-neutral-700">
-                  <span className="w-6 h-6 rounded-full bg-violet-100 text-violet-600 flex items-center justify-center flex-shrink-0">
+                  <span className="w-6 h-6 rounded-full bg-blue-100 text-blue-600 flex items-center justify-center flex-shrink-0">
                     <Check className="w-3.5 h-3.5" strokeWidth={3} />
                   </span>
                   {b}
@@ -73,13 +73,13 @@ const ServicePage = () => {
       <section className="py-20 bg-white">
         <div className="max-w-[1100px] mx-auto px-6 lg:px-8">
           <h2 className="text-3xl md:text-4xl font-bold text-neutral-900">
-            What we <span className="text-violet-600">deliver</span>
+            What we <span className="text-blue-600">deliver</span>
           </h2>
           <p className="mt-3 text-neutral-600 max-w-3xl">{service.description}</p>
 
           <div className="mt-10 grid sm:grid-cols-2 gap-5">
             {service.techStack.map((t) => (
-              <div key={t} className="bg-neutral-50 hover:bg-violet-50 border border-neutral-100 rounded-2xl p-5 transition-colors">
+              <div key={t} className="bg-neutral-50 hover:bg-blue-50 border border-neutral-100 rounded-2xl p-5 transition-colors">
                 <div className="font-semibold text-neutral-900">{t}</div>
                 <p className="mt-1 text-sm text-neutral-600">Production-grade implementations and integrations.</p>
               </div>
@@ -91,12 +91,12 @@ const ServicePage = () => {
       <section className="py-20 bg-neutral-50">
         <div className="max-w-[1400px] mx-auto px-6 lg:px-8">
           <h2 className="text-3xl md:text-4xl font-bold text-neutral-900 text-center">
-            Related <span className="text-violet-600">technology platforms</span>
+            Related <span className="text-blue-600">technology platforms</span>
           </h2>
           <div className="mt-10 grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
             {(technologyDomains.find((d) => d.id === service.id)?.platforms || technologyDomains[0].platforms).map((p) => (
-              <div key={p.name} className="bg-white border border-neutral-200 rounded-2xl p-5 text-center hover:border-violet-300 hover:-translate-y-0.5 transition-all">
-                <div className="w-10 h-10 mx-auto rounded-lg bg-violet-100 text-violet-600 flex items-center justify-center">
+              <div key={p.name} className="bg-white border border-neutral-200 rounded-2xl p-5 text-center hover:border-blue-300 hover:-translate-y-0.5 transition-all">
+                <div className="w-10 h-10 mx-auto rounded-lg bg-blue-100 text-blue-600 flex items-center justify-center">
                   <Icon name={p.icon} className="w-5 h-5" />
                 </div>
                 <div className="mt-2 text-sm font-medium text-neutral-800">{p.name}</div>

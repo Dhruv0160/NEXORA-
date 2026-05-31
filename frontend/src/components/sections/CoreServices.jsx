@@ -10,11 +10,11 @@ const CoreServices = () => {
     <section className="py-20 lg:py-24 bg-white">
       <div className="max-w-[1400px] mx-auto px-6 lg:px-8">
         <div className="text-center max-w-3xl mx-auto mb-14">
-          <span className="inline-block px-4 py-1.5 rounded-full bg-violet-100 text-violet-700 text-sm font-medium">
+          <span className="inline-block px-4 py-1.5 rounded-full bg-blue-100 text-blue-700 text-sm font-medium">
             What we build
           </span>
           <h2 className="mt-4 text-3xl md:text-5xl font-bold tracking-tight text-neutral-950">
-            AI services, <span className="bg-gradient-to-r from-violet-600 to-fuchsia-600 bg-clip-text text-transparent">end-to-end</span>
+            AI services, <span className="bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent">end-to-end</span>
           </h2>
           <p className="mt-4 text-neutral-600 text-lg">
             From strategy to deployed agents—engineered for evaluation,
@@ -28,12 +28,12 @@ const CoreServices = () => {
             return (
               <div
                 key={s.id}
-                className="group relative bg-white border border-neutral-200 rounded-3xl p-8 lg:p-10 hover:border-violet-400 hover:shadow-xl hover:shadow-violet-100/50 transition-all duration-300 overflow-hidden"
+                className="group relative bg-white border border-neutral-200 rounded-3xl p-8 lg:p-10 hover:border-blue-400 hover:shadow-xl hover:shadow-blue-100/50 transition-all duration-300 overflow-hidden"
               >
-                <div className="absolute -top-16 -right-16 w-48 h-48 bg-violet-100/0 group-hover:bg-violet-100/40 rounded-full transition-colors duration-500" />
+                <div className="absolute -top-16 -right-16 w-48 h-48 bg-blue-100/0 group-hover:bg-blue-100/40 rounded-full transition-colors duration-500" />
 
                 <div className="relative">
-                  <div className="w-14 h-14 rounded-2xl bg-violet-100 text-violet-600 flex items-center justify-center group-hover:bg-violet-600 group-hover:text-white transition-colors">
+                  <div className="w-14 h-14 rounded-2xl bg-blue-100 text-blue-600 flex items-center justify-center group-hover:bg-blue-600 group-hover:text-white transition-colors">
                     <Icon className="w-7 h-7" strokeWidth={1.8} />
                   </div>
                   <h3 className="mt-6 text-2xl font-bold text-neutral-900">{s.title}</h3>
@@ -57,7 +57,7 @@ const CoreServices = () => {
 
                   <Link
                     to={`/services/${s.id}`}
-                    className="mt-6 inline-flex items-center gap-2 text-violet-600 font-semibold text-sm group-hover:gap-3 transition-all"
+                    className="mt-6 inline-flex items-center gap-2 text-blue-600 font-semibold text-sm group-hover:gap-3 transition-all"
                   >
                     {s.cta}
                     <ArrowRight className="w-4 h-4" />

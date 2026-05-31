@@ -29,15 +29,15 @@ const Hero = () => {
         }}
       />
       {/* Gradient blobs */}
-      <div className="absolute -top-32 -left-32 w-[500px] h-[500px] bg-violet-300/30 rounded-full blur-3xl pointer-events-none" />
-      <div className="absolute -top-20 right-0 w-[600px] h-[500px] bg-fuchsia-300/25 rounded-full blur-3xl pointer-events-none" />
+      <div className="absolute -top-32 -left-32 w-[500px] h-[500px] bg-blue-300/30 rounded-full blur-3xl pointer-events-none" />
+      <div className="absolute -top-20 right-0 w-[600px] h-[500px] bg-indigo-300/25 rounded-full blur-3xl pointer-events-none" />
       <div className="absolute top-40 left-1/2 w-[400px] h-[400px] bg-indigo-300/20 rounded-full blur-3xl pointer-events-none" />
 
       <div className="relative max-w-[1400px] mx-auto px-6 lg:px-8 pt-20 lg:pt-28 pb-20">
         <div className="max-w-4xl mx-auto text-center">
           {/* Location pill */}
-          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white border border-violet-200 shadow-sm shadow-violet-100/60 text-sm font-medium text-neutral-700">
-            <MapPin className="w-3.5 h-3.5 text-violet-600" />
+          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white border border-blue-200 shadow-sm shadow-blue-100/60 text-sm font-medium text-neutral-700">
+            <MapPin className="w-3.5 h-3.5 text-blue-600" />
             Boutique AI studio • Vadodara, India
           </div>
 
@@ -46,7 +46,7 @@ const Hero = () => {
             Production-ready
             <br />
             <span className="inline-block relative">
-              <span className="bg-gradient-to-r from-violet-600 via-indigo-600 to-fuchsia-600 bg-clip-text text-transparent">
+              <span className="bg-gradient-to-r from-blue-600 via-indigo-600 to-indigo-600 bg-clip-text text-transparent">
                 {heroRotatingTexts[idx]}
               </span>
             </span>
@@ -61,7 +61,7 @@ const Hero = () => {
 
           <div className="mt-9 flex flex-col sm:flex-row items-center justify-center gap-3">
             <Link to="/contact">
-              <Button className="bg-neutral-950 hover:bg-violet-700 text-white rounded-full px-7 h-12 text-[15px] font-semibold shadow-xl shadow-violet-200 hover:shadow-violet-300 transition-all gap-2">
+              <Button className="bg-neutral-950 hover:bg-blue-700 text-white rounded-full px-7 h-12 text-[15px] font-semibold shadow-xl shadow-blue-200 hover:shadow-blue-300 transition-all gap-2">
                 Book Discovery Call
                 <ArrowRight className="w-4 h-4" />
               </Button>
@@ -71,7 +71,7 @@ const Hero = () => {
                 variant="outline"
                 className="bg-white border-neutral-200 hover:bg-neutral-50 text-neutral-900 rounded-full px-6 h-12 text-[15px] font-medium gap-2"
               >
-                <Play className="w-4 h-4 fill-violet-600 text-violet-600" />
+                <Play className="w-4 h-4 fill-blue-600 text-blue-600" />
                 See what we build
               </Button>
             </Link>
@@ -89,11 +89,11 @@ const Hero = () => {
               return (
                 <div
                   key={b.label}
-                  className="group relative bg-white/70 backdrop-blur border border-neutral-200/70 rounded-2xl py-6 px-5 hover:border-violet-300 hover:shadow-lg hover:shadow-violet-100 transition-all"
+                  className="group relative bg-white/70 backdrop-blur border border-neutral-200/70 rounded-2xl py-6 px-5 hover:border-blue-300 hover:shadow-lg hover:shadow-blue-100 transition-all"
                 >
                   <div className="flex items-center justify-between mb-3">
-                    <span className="text-xs font-semibold text-violet-600">0{i + 1}</span>
-                    <div className="w-9 h-9 rounded-lg bg-gradient-to-br from-violet-100 to-fuchsia-100 text-violet-700 flex items-center justify-center group-hover:from-violet-600 group-hover:to-fuchsia-600 group-hover:text-white transition-colors">
+                    <span className="text-xs font-semibold text-blue-600">0{i + 1}</span>
+                    <div className="w-9 h-9 rounded-lg bg-gradient-to-br from-blue-100 to-indigo-100 text-blue-700 flex items-center justify-center group-hover:from-blue-600 group-hover:to-indigo-600 group-hover:text-white transition-colors">
                       <Icon className="w-4 h-4" strokeWidth={2} />
                     </div>
                   </div>

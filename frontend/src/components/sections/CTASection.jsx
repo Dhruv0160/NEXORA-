@@ -15,8 +15,8 @@ const CTASection = () => {
   return (
     <section className="relative py-20 lg:py-28 overflow-hidden bg-neutral-950">
       {/* Decorative gradients */}
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(124,58,237,0.35),transparent_55%)]" />
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_bottom_left,rgba(217,70,239,0.25),transparent_55%)]" />
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(37,99,235,0.35),transparent_55%)]" />
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_bottom_left,rgba(79,70,229,0.25),transparent_55%)]" />
       <div
         className="absolute inset-0 opacity-[0.08] pointer-events-none"
         style={{
@@ -29,12 +29,12 @@ const CTASection = () => {
       <div className="relative max-w-[1400px] mx-auto px-6 lg:px-8">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div>
-            <span className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-white/10 backdrop-blur border border-white/10 text-xs font-medium text-violet-200">
+            <span className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-white/10 backdrop-blur border border-white/10 text-xs font-medium text-blue-200">
               <Zap className="w-3.5 h-3.5" /> Built for production
             </span>
             <h2 className="mt-5 text-3xl md:text-5xl font-bold text-white leading-[1.1] tracking-tight">
               From idea to deployed AI <br />
-              <span className="bg-gradient-to-r from-violet-400 via-fuchsia-400 to-pink-400 bg-clip-text text-transparent">
+              <span className="bg-gradient-to-r from-blue-400 via-indigo-400 to-pink-400 bg-clip-text text-transparent">
                 in weeks, not quarters.
               </span>
             </h2>
@@ -43,7 +43,7 @@ const CTASection = () => {
               to ship AI that actually changes a business metric.
             </p>
             <Link to="/contact">
-              <button className="mt-8 inline-flex items-center gap-2 bg-white text-neutral-950 hover:bg-violet-100 font-semibold px-7 h-12 rounded-full transition-all">
+              <button className="mt-8 inline-flex items-center gap-2 bg-white text-neutral-950 hover:bg-blue-100 font-semibold px-7 h-12 rounded-full transition-all">
                 Start an AI Project
                 <ArrowRight className="w-4 h-4" />
               </button>
@@ -54,9 +54,9 @@ const CTASection = () => {
             {promises.map((p) => (
               <div
                 key={p}
-                className="flex items-start gap-3 bg-white/5 backdrop-blur border border-white/10 rounded-xl p-4 hover:border-violet-400/40 hover:bg-white/10 transition-all"
+                className="flex items-start gap-3 bg-white/5 backdrop-blur border border-white/10 rounded-xl p-4 hover:border-blue-400/40 hover:bg-white/10 transition-all"
               >
-                <span className="w-6 h-6 rounded-full bg-gradient-to-br from-violet-500 to-fuchsia-500 text-white flex items-center justify-center flex-shrink-0 mt-0.5">
+                <span className="w-6 h-6 rounded-full bg-gradient-to-br from-blue-500 to-indigo-500 text-white flex items-center justify-center flex-shrink-0 mt-0.5">
                   <Check className="w-3.5 h-3.5" strokeWidth={3} />
                 </span>
                 <span className="text-sm text-neutral-200 leading-snug">{p}</span>

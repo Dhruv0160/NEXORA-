@@ -19,12 +19,12 @@ const NavDropdown = ({ label, items }) => {
       </button>
       {open && (
         <div className="absolute top-full left-1/2 -translate-x-1/2 pt-2 z-50">
-          <div className="bg-white/95 backdrop-blur-xl rounded-2xl shadow-2xl shadow-violet-100/40 border border-neutral-100 py-2 min-w-[280px] animate-in fade-in slide-in-from-top-2 duration-200">
+          <div className="bg-white/95 backdrop-blur-xl rounded-2xl shadow-2xl shadow-blue-100/40 border border-neutral-100 py-2 min-w-[280px] animate-in fade-in slide-in-from-top-2 duration-200">
             {items.map((item) => (
               <Link
                 key={item.name}
                 to={item.href}
-                className="block px-5 py-2.5 text-sm text-neutral-700 hover:bg-violet-50 hover:text-violet-700 transition-colors"
+                className="block px-5 py-2.5 text-sm text-neutral-700 hover:bg-blue-50 hover:text-blue-700 transition-colors"
               >
                 {item.name}
               </Link>
@@ -38,18 +38,14 @@ const NavDropdown = ({ label, items }) => {
 
 const Logo = () => (
   <Link to="/" className="flex items-center gap-2.5 group">
-    <div className="relative w-9 h-9 rounded-xl bg-gradient-to-br from-violet-600 via-indigo-600 to-fuchsia-600 flex items-center justify-center shadow-lg shadow-violet-200">
-      <Sparkles className="w-5 h-5 text-white" strokeWidth={2.2} />
-      <div className="absolute inset-0 rounded-xl ring-1 ring-white/20" />
-    </div>
-    <div className="flex flex-col leading-none">
-      <span className="text-[22px] font-bold tracking-tight text-neutral-950">
-        Nexora<span className="text-violet-600">.</span>
-      </span>
-      <span className="text-[9px] font-semibold text-neutral-500 tracking-[0.18em] mt-0.5 uppercase">
-        AI Solutions
-      </span>
-    </div>
+    <img
+      src="https://customer-assets.emergentagent.com/job_nexora-ai-25/artifacts/w563sbi0_image.png"
+      alt="Nexora"
+      className="h-9 w-auto object-contain"
+    />
+    <span className="hidden sm:inline-block text-[9px] font-semibold text-neutral-500 tracking-[0.18em] uppercase border-l border-neutral-200 pl-2.5">
+      AI Solutions
+    </span>
   </Link>
 );
 
@@ -97,7 +93,7 @@ const Header = () => {
             <Search className="w-4 h-4" />
           </button>
           <Link to="/contact">
-            <Button className="hidden md:inline-flex bg-neutral-950 hover:bg-violet-700 text-white rounded-full px-5 h-10 text-sm font-medium shadow-sm hover:shadow-md hover:shadow-violet-200 transition-all">
+            <Button className="hidden md:inline-flex bg-neutral-950 hover:bg-blue-700 text-white rounded-full px-5 h-10 text-sm font-medium shadow-sm hover:shadow-md hover:shadow-blue-200 transition-all">
               Talk to us
             </Button>
           </Link>
@@ -147,7 +143,7 @@ const Header = () => {
               </div>
             </details>
             <Link to="/contact" className="block mt-4">
-              <Button className="w-full bg-neutral-950 hover:bg-violet-700 text-white rounded-full h-11">Talk to us</Button>
+              <Button className="w-full bg-neutral-950 hover:bg-blue-700 text-white rounded-full h-11">Talk to us</Button>
             </Link>
           </div>
         </div>
