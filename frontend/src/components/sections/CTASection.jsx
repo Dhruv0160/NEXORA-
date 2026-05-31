@@ -1,12 +1,14 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { ArrowRight, Zap } from "lucide-react";
+import { ArrowRight, Zap, Check } from "lucide-react";
 
-const stats = [
-  { value: "50+", label: "AI Models in Production" },
-  { value: "12+", label: "Industries Served" },
-  { value: "3.2x", label: "Avg. ROI on AI Spend" },
-  { value: "100%", label: "Custom Built for You" }
+const promises = [
+  "Working prototype in 2–3 weeks",
+  "Senior engineers from day one",
+  "Production-grade evals & guardrails",
+  "Transparent weekly demos",
+  "Flexible engagement models",
+  "Your data stays your data"
 ];
 
 const CTASection = () => {
@@ -15,7 +17,6 @@ const CTASection = () => {
       {/* Decorative gradients */}
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(124,58,237,0.35),transparent_55%)]" />
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_bottom_left,rgba(217,70,239,0.25),transparent_55%)]" />
-      {/* Grid pattern */}
       <div
         className="absolute inset-0 opacity-[0.08] pointer-events-none"
         style={{
@@ -49,14 +50,16 @@ const CTASection = () => {
             </Link>
           </div>
 
-          <div className="grid grid-cols-2 gap-4">
-            {stats.map((s) => (
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+            {promises.map((p) => (
               <div
-                key={s.label}
-                className="bg-white/5 backdrop-blur border border-white/10 rounded-2xl p-6 hover:border-violet-400/40 hover:bg-white/10 transition-all"
+                key={p}
+                className="flex items-start gap-3 bg-white/5 backdrop-blur border border-white/10 rounded-xl p-4 hover:border-violet-400/40 hover:bg-white/10 transition-all"
               >
-                <div className="text-4xl font-bold text-white tracking-tight">{s.value}</div>
-                <div className="mt-1 text-sm text-neutral-400">{s.label}</div>
+                <span className="w-6 h-6 rounded-full bg-gradient-to-br from-violet-500 to-fuchsia-500 text-white flex items-center justify-center flex-shrink-0 mt-0.5">
+                  <Check className="w-3.5 h-3.5" strokeWidth={3} />
+                </span>
+                <span className="text-sm text-neutral-200 leading-snug">{p}</span>
               </div>
             ))}
           </div>

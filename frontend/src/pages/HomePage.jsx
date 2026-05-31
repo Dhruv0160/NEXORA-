@@ -1,20 +1,16 @@
 import React from "react";
-import Hero from "../components/sections/Hero";
-import BrandMarquee from "../components/sections/BrandMarquee";
+import HeroSection from "../components/sections/Hero";
 import CoreServices from "../components/sections/CoreServices";
 import TechStack from "../components/sections/TechStack";
-import SuccessStories from "../components/sections/SuccessStories";
-import Testimonials from "../components/sections/Testimonials";
+import UseCases from "../components/sections/UseCases";
 import CTASection from "../components/sections/CTASection";
 
 const HomePage = () => (
   <>
-    <Hero />
-    <BrandMarquee />
+    <HeroSection />
     <CoreServices />
     <TechStack />
-    <SuccessStories />
-    <Testimonials />
+    <UseCases />
     <CTASection />
   </>
 );

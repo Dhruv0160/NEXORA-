@@ -1,4 +1,4 @@
-// Mock data for Nexora AI Solutions
+// Mock data for Nexora AI Solutions — honest content for a new boutique AI studio
 
 export const heroRotatingTexts = [
   "Generative AI",
@@ -8,17 +8,12 @@ export const heroRotatingTexts = [
   "Conversational AI"
 ];
 
-export const heroStats = [
-  { value: "50+", label: "AI Models Deployed", icon: "Brain" },
-  { value: "3x", label: "Avg. ROI Uplift", icon: "TrendingUp" },
-  { value: "24/7", label: "AI Agent Uptime", icon: "Activity" },
-  { value: "100%", label: "Custom Built", icon: "Sparkles" }
-];
-
-export const brandLogos = [
-  "InvestFirm", "RealtyOne", "MediCore", "EduSphere", "FinHub",
-  "ShopGrid", "HealthAI", "PropTech", "LearnIQ", "BankWise",
-  "AutoFlow", "RetailX", "CareNet", "AgriSense", "LogiAI"
+// Capabilities we offer (not inflated numbers)
+export const heroBadges = [
+  { label: "Discovery", desc: "In 1 week", icon: "Search" },
+  { label: "Prototype", desc: "In 2–3 weeks", icon: "Layers" },
+  { label: "Engineer", desc: "Production-ready", icon: "Code2" },
+  { label: "Operate", desc: "24/7 monitored", icon: "Activity" }
 ];
 
 export const coreServices = [
@@ -163,98 +158,71 @@ export const technologyDomains = [
   }
 ];
 
-export const caseStudies = [
+// Example AI solutions we build — clearly framed as capabilities, not past clients
+export const useCases = [
   {
-    id: "realty-lead-ai",
-    client: "InvestFirm Realty",
-    title: "Realty Lead Qualifier: AI Agent That Books Site Visits",
+    id: "lead-qualifier",
+    industry: "Real Estate / Sales",
+    title: "Lead Qualifier AI Agent",
     image: "https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=1200&q=80",
-    industry: "Real Estate",
-    challenge:
-      "A real-estate developer was spending heavily on paid leads but only 4% reached a site-visit—agents were buried under unqualified calls and WhatsApp messages.",
-    solution:
-      "We built a conversational AI agent that triages every lead in English, Hindi and Gujarati on WhatsApp, scores intent, books visits and hands hot leads to humans.",
-    results: [
-      "Lead-to-site-visit rate jumped from 4% to 17%",
-      "68% reduction in sales team response time",
-      "3.1x improvement in marketing ROAS",
-      "24/7 multilingual conversations across 5 projects"
+    problem:
+      "Sales teams drown in unqualified inbound leads from ads and WhatsApp—high-intent buyers slip through the cracks.",
+    approach:
+      "A conversational AI agent on WhatsApp / web that triages every lead in multiple languages, scores intent, books site visits and hands hot leads to humans.",
+    deliverables: [
+      "Multilingual conversational agent (EN / Hindi / Gujarati)",
+      "CRM + calendar integration (HubSpot, Zoho, Google Calendar)",
+      "Intent scoring & priority routing",
+      "Dashboards for sales & marketing"
     ]
   },
   {
-    id: "retail-recsys",
-    client: "ShopGrid",
-    title: "ShopGrid: Personalized Recommendation Engine",
+    id: "private-copilot",
+    industry: "Knowledge Work / Professional Services",
+    title: "Private Knowledge Copilot",
+    image: "https://images.unsplash.com/photo-1531746790731-6c087fecd65a?w=1200&q=80",
+    problem:
+      "Teams spend hours searching internal documents, contracts and SOPs—every answer is locked in a different drive or PDF.",
+    approach:
+      "A secure ChatGPT-style assistant trained on your private documents with citations, role-based access and zero data leakage outside your tenant.",
+    deliverables: [
+      "RAG pipeline over your private documents",
+      "Source citations on every answer",
+      "Role-based access control",
+      "Self-hosted or private-cloud deployment"
+    ]
+  },
+  {
+    id: "vision-qa",
+    industry: "Manufacturing / Retail",
+    title: "Visual Inspection & Analytics",
+    image: "https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?w=1200&q=80",
+    problem:
+      "Manual visual inspection is slow, inconsistent and expensive—defects and shrinkage cost margin every shift.",
+    approach:
+      "Custom computer-vision models for defect detection, OCR or footfall analytics—deployed at the edge for millisecond inference.",
+    deliverables: [
+      "Custom-trained CV model on your imagery",
+      "Edge or cloud deployment",
+      "Real-time alerts & dashboard",
+      "Continuous learning pipeline"
+    ]
+  },
+  {
+    id: "recommendation",
+    industry: "D2C / eCommerce",
+    title: "Personalized Recommendation Engine",
     image: "https://images.unsplash.com/photo-1556742400-b5b7c5121f1f?w=1200&q=80",
-    industry: "Retail",
-    challenge:
-      "A growing D2C marketplace needed personalized product recommendations to lift average order value and reduce paid-acquisition dependence.",
-    solution:
-      "We engineered a hybrid (collaborative + semantic) recommendation engine running on vector search, served behind a 40ms API on AWS.",
-    results: [
-      "22% lift in average order value",
-      "38% increase in repeat purchase rate",
-      "P99 latency held under 45ms at 5k RPS",
-      "$140k annualized infra cost savings"
+    problem:
+      "Generic merchandising kills conversion—shoppers want a store that knows them but cohort-based rules can't scale.",
+    approach:
+      "A hybrid (collaborative + semantic) recommendation engine on vector search—served under a 50ms API to your storefront.",
+    deliverables: [
+      "Recommendation model trained on your catalog & behavior",
+      "Sub-50ms inference API",
+      "A/B testing framework",
+      "Lift reporting dashboard"
     ]
-  },
-  {
-    id: "healthcare-vision",
-    client: "MediCore Labs",
-    title: "MediCore: Vision AI for Radiology Triage",
-    image: "https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=1200&q=80",
-    industry: "Healthcare",
-    challenge:
-      "A diagnostics chain wanted to prioritize urgent chest X-rays in a queue of thousands of scans per day to reduce reporting turnaround.",
-    solution:
-      "A computer-vision triage model flags 14 critical findings and reorders the radiologist worklist—deployed on-prem to meet data-residency norms.",
-    results: [
-      "Critical-case turnaround down from 6h to 38min",
-      "94% sensitivity on validation cohort",
-      "Zero PHI ever left customer premises",
-      "FDA Class II audit-ready documentation"
-    ]
-  },
-  {
-    id: "fin-copilot",
-    client: "FinHub",
-    title: "FinHub: AI Copilot for Wealth Advisors",
-    image: "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=1200&q=80",
-    industry: "FinTech",
-    challenge:
-      "Wealth advisors spent 60% of their week summarizing portfolios and drafting client emails instead of advising.",
-    solution:
-      "A secure GenAI copilot that drafts personalized portfolio reviews, answers regulatory questions and auto-schedules client check-ins.",
-    results: [
-      "Advisor productivity up 2.4x",
-      "AUM per advisor grew 31% in 6 months",
-      "All responses cite source documents (audit-ready)",
-      "SOC 2 Type II compliant deployment"
-    ]
-  }
-];
-
-export const testimonials = [
-  {
-    name: "Aman Mehta",
-    title: "Head of Sales, InvestFirm Realty",
-    avatar: "https://images.unsplash.com/photo-1560250097-0b93528c311a?w=150&q=80",
-    quote:
-      "Nexora's AI agent now handles every inbound lead before our sales team sees it. Site-visit bookings tripled in 60 days—this is the most useful AI we have shipped."
-  },
-  {
-    name: "Dr. Priya Iyer",
-    title: "Chief Radiologist, MediCore Labs",
-    avatar: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=150&q=80",
-    quote:
-      "Their vision model integrated cleanly into our PACS without disrupting workflows. Reporting turnaround on critical cases dropped from hours to minutes."
-  },
-  {
-    name: "Rohan Khurana",
-    title: "CTO, FinHub",
-    avatar: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=150&q=80",
-    quote:
-      "Dhruv and the Nexora team don't just demo AI—they engineer it for production, with security, evaluation and observability built-in from day one."
   }
 ];
 
@@ -282,7 +250,7 @@ export const offices = [
 
 export const blogPosts = [
   { id: "genai-marketing", title: "How Generative AI Is Transforming B2B Marketing in 2026", category: "Generative AI", date: "Today", image: "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=800&q=80", excerpt: "From hyper-personalised outbound to self-improving content engines, GenAI is rewriting the modern marketing stack." },
-  { id: "ai-agents-prod", title: "Building AI Agents That Actually Work in Production", category: "AI Agents", date: "Yesterday", image: "https://images.pexels.com/photos/5833779/pexels-photo-5833779.jpeg?w=800", excerpt: "A practitioner's guide to evaluation, guardrails and observability for agentic systems—lessons from 12 real deployments." },
+  { id: "ai-agents-prod", title: "Building AI Agents That Actually Work in Production", category: "AI Agents", date: "Yesterday", image: "https://images.pexels.com/photos/5833779/pexels-photo-5833779.jpeg?w=800", excerpt: "A practitioner's guide to evaluation, guardrails and observability for agentic systems." },
   { id: "rag-patterns", title: "5 RAG Patterns We Use to Cut Hallucinations to Near Zero", category: "LLM Engineering", date: "Last Week", image: "https://images.unsplash.com/photo-1644088379091-d574269d422f?w=800&q=80", excerpt: "Hybrid retrieval, query rewriting, reranking, citation enforcement and structured outputs—our production playbook." }
 ];
 
@@ -296,8 +264,8 @@ export const navServices = [
 ];
 
 export const navSolutions = [
-  { name: "Case Studies", href: "/case-studies" },
-  { name: "Our Clients", href: "/clients" },
+  { name: "What We Build", href: "/case-studies" },
+  { name: "Our Approach", href: "/about#culture" },
   { name: "Industries", href: "/industries" }
 ];
 
@@ -311,6 +279,7 @@ export const navAbout = [
 export const founder = {
   name: "Dhruv Patel",
   title: "Founder & CEO",
+  image: "https://customer-assets.emergentagent.com/job_nexora-ai-25/artifacts/k7cew7mh_image.png",
   bio: "Dhruv founded Nexora to bridge the gap between AI's promise and real business outcomes. With a background in performance marketing and machine learning, he focuses on shipping AI that compounds value—one production deployment at a time.",
   location: "Vadodara, India"
 };
@@ -323,3 +292,9 @@ export const social = {
   phone: "+91 99042 56613",
   whatsapp: "https://wa.me/919904256613"
 };
+
+// Kept for backward compatibility — empty arrays so legacy sections don't crash
+export const brandLogos = [];
+export const heroStats = [];
+export const caseStudies = useCases;
+export const testimonials = [];

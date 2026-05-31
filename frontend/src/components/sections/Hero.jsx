@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import { ArrowRight, Brain, TrendingUp, Activity, Sparkles, Play } from "lucide-react";
+import { ArrowRight, Search, Layers, Code2, Activity, Play, MapPin } from "lucide-react";
 import { Button } from "../ui/button";
-import { heroRotatingTexts, heroStats } from "../../data/mock";
+import { heroRotatingTexts, heroBadges } from "../../data/mock";
 
-const iconMap = { Brain, TrendingUp, Activity, Sparkles };
+const iconMap = { Search, Layers, Code2, Activity };
 
 const Hero = () => {
   const [idx, setIdx] = useState(0);
@@ -35,15 +35,11 @@ const Hero = () => {
 
       <div className="relative max-w-[1400px] mx-auto px-6 lg:px-8 pt-20 lg:pt-28 pb-20">
         <div className="max-w-4xl mx-auto text-center">
-          {/* Pill */}
-          <Link
-            to="/blog"
-            className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white border border-violet-200 shadow-sm shadow-violet-100/60 text-sm font-medium text-neutral-700 hover:border-violet-400 transition-colors"
-          >
-            <span className="w-2 h-2 rounded-full bg-violet-600 animate-pulse" />
-            New • RAG patterns playbook is live
-            <ArrowRight className="w-3.5 h-3.5" />
-          </Link>
+          {/* Location pill */}
+          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white border border-violet-200 shadow-sm shadow-violet-100/60 text-sm font-medium text-neutral-700">
+            <MapPin className="w-3.5 h-3.5 text-violet-600" />
+            Boutique AI studio • Vadodara, India
+          </div>
 
           {/* Headline */}
           <h1 className="mt-7 text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight text-neutral-950 leading-[1.05]">
@@ -76,51 +72,37 @@ const Hero = () => {
                 className="bg-white border-neutral-200 hover:bg-neutral-50 text-neutral-900 rounded-full px-6 h-12 text-[15px] font-medium gap-2"
               >
                 <Play className="w-4 h-4 fill-violet-600 text-violet-600" />
-                See AI in production
+                See what we build
               </Button>
             </Link>
           </div>
-
-          {/* Social proof avatars */}
-          <div className="mt-10 flex items-center justify-center gap-4">
-            <div className="flex -space-x-2.5">
-              {["1494790108377-be9c29b29330", "1438761681033-6461ffad8d80", "1500648767791-00dcc994a43e", "1544005313-94ddf0286df2"].map((id) => (
-                <img
-                  key={id}
-                  src={`https://images.unsplash.com/photo-${id}?w=80&q=80`}
-                  alt="client"
-                  className="w-9 h-9 rounded-full border-2 border-white object-cover"
-                />
-              ))}
-            </div>
-            <div className="text-left">
-              <div className="flex items-center gap-1 text-amber-500 text-sm">
-                {"★★★★★".split("").map((s, i) => (
-                  <span key={i}>{s}</span>
-                ))}
-              </div>
-              <div className="text-xs text-neutral-600 mt-0.5">Trusted by 50+ teams shipping AI in production</div>
-            </div>
-          </div>
         </div>
 
-        {/* Stats Strip */}
-        <div className="mt-20 grid grid-cols-2 md:grid-cols-4 gap-4">
-          {heroStats.map((s) => {
-            const Icon = iconMap[s.icon];
-            return (
-              <div
-                key={s.label}
-                className="group relative bg-white/70 backdrop-blur border border-neutral-200/70 rounded-2xl py-6 px-5 hover:border-violet-300 hover:shadow-lg hover:shadow-violet-100 transition-all"
-              >
-                <div className="absolute top-5 right-5 w-9 h-9 rounded-lg bg-gradient-to-br from-violet-100 to-fuchsia-100 text-violet-700 flex items-center justify-center group-hover:from-violet-600 group-hover:to-fuchsia-600 group-hover:text-white transition-colors">
-                  <Icon className="w-4 h-4" strokeWidth={2} />
+        {/* Process Strip — honest capabilities, not inflated stats */}
+        <div className="mt-20">
+          <p className="text-center text-xs uppercase tracking-[0.3em] text-neutral-500 font-medium mb-6">
+            How we work
+          </p>
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+            {heroBadges.map((b, i) => {
+              const Icon = iconMap[b.icon];
+              return (
+                <div
+                  key={b.label}
+                  className="group relative bg-white/70 backdrop-blur border border-neutral-200/70 rounded-2xl py-6 px-5 hover:border-violet-300 hover:shadow-lg hover:shadow-violet-100 transition-all"
+                >
+                  <div className="flex items-center justify-between mb-3">
+                    <span className="text-xs font-semibold text-violet-600">0{i + 1}</span>
+                    <div className="w-9 h-9 rounded-lg bg-gradient-to-br from-violet-100 to-fuchsia-100 text-violet-700 flex items-center justify-center group-hover:from-violet-600 group-hover:to-fuchsia-600 group-hover:text-white transition-colors">
+                      <Icon className="w-4 h-4" strokeWidth={2} />
+                    </div>
+                  </div>
+                  <div className="text-xl font-bold text-neutral-950 tracking-tight">{b.label}</div>
+                  <div className="text-sm text-neutral-600 mt-1">{b.desc}</div>
                 </div>
-                <div className="text-3xl md:text-4xl font-bold text-neutral-950 tracking-tight">{s.value}</div>
-                <div className="text-sm text-neutral-600 mt-1">{s.label}</div>
-              </div>
-            );
-          })}
+              );
+            })}
+          </div>
         </div>
       </div>
     </section>

@@ -1,8 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import * as LucideIcons from "lucide-react";
-import { ArrowRight } from "lucide-react";
-import { values, processSteps } from "../data/mock";
+import { ArrowRight, MapPin, Mail } from "lucide-react";
+import { values, processSteps, founder, social } from "../data/mock";
 
 const Icon = ({ name, className }) => {
   const I = LucideIcons[name] || LucideIcons.Circle;
@@ -23,9 +23,10 @@ const AboutPage = () => {
               An AI partner that ships <span className="bg-gradient-to-r from-violet-600 to-fuchsia-600 bg-clip-text text-transparent">outcomes</span>, not slide decks.
             </h1>
             <p className="mt-6 text-lg text-neutral-600 leading-relaxed">
-              Founded in Vadodara, Nexora is an applied AI lab. We pair senior
-              engineers and applied scientists with product thinkers to deliver
-              AI systems that compound business value in production.
+              Founded in Vadodara, Nexora is an applied AI studio. We pair
+              engineers, applied scientists and product thinkers to design,
+              build and operate AI systems that compound business value in
+              production.
             </p>
             <Link to="/contact">
               <button className="mt-7 inline-flex items-center gap-2 bg-neutral-950 hover:bg-violet-700 text-white font-semibold px-7 h-12 rounded-full transition-colors">
@@ -34,20 +35,20 @@ const AboutPage = () => {
             </Link>
           </div>
           <div className="relative">
-            <div className="aspect-[4/3] rounded-3xl overflow-hidden shadow-2xl shadow-violet-100">
+            <div className="aspect-[4/3] rounded-3xl overflow-hidden shadow-2xl shadow-violet-100 bg-gradient-to-br from-violet-100 to-fuchsia-100">
               <img
                 src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=900&q=80"
                 alt="Our team"
                 className="w-full h-full object-cover"
               />
             </div>
-            <div className="absolute -bottom-6 -left-6 bg-white rounded-2xl shadow-xl p-5 border border-neutral-100">
-              <div className="text-3xl font-bold bg-gradient-to-r from-violet-600 to-fuchsia-600 bg-clip-text text-transparent">50+</div>
-              <div className="text-sm text-neutral-600">AI Models Deployed</div>
+            <div className="absolute -bottom-6 -left-6 bg-white rounded-2xl shadow-xl p-5 border border-neutral-100 max-w-[200px]">
+              <div className="text-sm font-bold text-violet-600">Boutique studio</div>
+              <div className="text-sm text-neutral-600 mt-1">Senior team, focused engagements.</div>
             </div>
-            <div className="absolute -top-6 -right-6 bg-white rounded-2xl shadow-xl p-5 border border-neutral-100">
-              <div className="text-3xl font-bold bg-gradient-to-r from-violet-600 to-fuchsia-600 bg-clip-text text-transparent">3.2x</div>
-              <div className="text-sm text-neutral-600">Avg. ROI Uplift</div>
+            <div className="absolute -top-6 -right-6 bg-white rounded-2xl shadow-xl p-5 border border-neutral-100 max-w-[200px]">
+              <div className="text-sm font-bold text-violet-600">India HQ</div>
+              <div className="text-sm text-neutral-600 mt-1">Vadodara, Gujarat — serving global clients.</div>
             </div>
           </div>
         </div>
@@ -59,26 +60,29 @@ const AboutPage = () => {
           <div className="relative w-[260px] h-[260px] mx-auto md:mx-0">
             <div className="absolute inset-0 bg-gradient-to-br from-violet-500 to-fuchsia-500 rounded-3xl rotate-6" />
             <img
-              src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&q=80"
-              alt="Dhruv Patel"
+              src={founder.image}
+              alt={founder.name}
               className="relative w-full h-full object-cover rounded-3xl border-4 border-white shadow-xl"
             />
           </div>
           <div>
-            <span className="text-sm font-bold tracking-widest text-violet-600 uppercase">Founder & Vision</span>
+            <span className="text-sm font-bold tracking-widest text-violet-600 uppercase">{founder.title}</span>
             <h2 className="mt-2 text-3xl md:text-4xl font-bold tracking-tight text-neutral-950">
-              Meet Dhruv Patel
+              Meet {founder.name}
             </h2>
-            <p className="mt-4 text-neutral-600 leading-relaxed">
-              Dhruv founded Nexora to bridge the gap between AI's promise and
-              real business outcomes. With a background in performance marketing
-              and machine learning, he focuses on shipping AI that compounds
-              value—one production deployment at a time.
-            </p>
+            <p className="mt-4 text-neutral-600 leading-relaxed">{founder.bio}</p>
             <p className="mt-3 text-neutral-600 leading-relaxed">
-              Based in Vadodara, India and serving clients across India, UAE
+              Based in {founder.location} — serving clients across India, UAE
               and Southeast Asia.
             </p>
+            <div className="mt-5 flex flex-wrap items-center gap-4 text-sm">
+              <a href={`mailto:${social.email}`} className="inline-flex items-center gap-2 text-violet-700 font-medium hover:underline">
+                <Mail className="w-4 h-4" /> {social.email}
+              </a>
+              <a href={social.linkedin} target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 text-violet-700 font-medium hover:underline">
+                <MapPin className="w-4 h-4" /> Connect on LinkedIn
+              </a>
+            </div>
           </div>
         </div>
       </section>
