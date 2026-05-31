@@ -1,143 +1,155 @@
-// Mock data for OrangeMantra clone
+// Mock data for Nexora AI Solutions
 
 export const heroRotatingTexts = [
-  "Digital Transformation",
-  "AI Transformation Services",
-  "Ecommerce Development",
-  "Cloud & DevOps Services",
-  "Custom Software Development"
+  "Generative AI",
+  "AI Agents & Automation",
+  "Predictive Analytics",
+  "Computer Vision",
+  "Conversational AI"
 ];
 
 export const heroStats = [
-  { value: "1000+", label: "Projects Delivered", icon: "Target" },
-  { value: "24+", label: "Years Experience", icon: "Award" },
-  { value: "97%", label: "Client Retention", icon: "Users" },
-  { value: "100%", label: "Global Reach", icon: "Zap" }
+  { value: "50+", label: "AI Models Deployed", icon: "Brain" },
+  { value: "3x", label: "Avg. ROI Uplift", icon: "TrendingUp" },
+  { value: "24/7", label: "AI Agent Uptime", icon: "Activity" },
+  { value: "100%", label: "Custom Built", icon: "Sparkles" }
 ];
 
 export const brandLogos = [
-  "IKEA", "PVR", "Eicher", "Haldiram's", "Honda", "Hero", "Mahindra",
-  "Asian Paints", "Tata", "Reliance", "Walmart", "Bosch", "Pepsi",
-  "Britannia", "ITC", "Dabur", "HUL", "Maruti", "Cipla", "Ranbaxy"
+  "InvestFirm", "RealtyOne", "MediCore", "EduSphere", "FinHub",
+  "ShopGrid", "HealthAI", "PropTech", "LearnIQ", "BankWise",
+  "AutoFlow", "RetailX", "CareNet", "AgriSense", "LogiAI"
 ];
 
 export const coreServices = [
   {
-    id: "digital-transformation",
-    icon: "Workflow",
-    title: "Digital Transformation",
-    headline: "Digitize and automate complex workflows with responsive software solutions",
+    id: "generative-ai",
+    icon: "Sparkles",
+    title: "Generative AI",
+    headline: "Custom LLM applications, copilots and content engines",
     description:
-      "End-to-end transformation services that modernize legacy systems, automate business processes, and unlock new revenue streams through digital channels.",
-    techStack: ["Salesforce", "SAP S/4HANA", "Microsoft Dynamics", "ServiceNow", "Oracle"],
-    cta: "Elevate Digital Transformation Journey",
-    color: "orange"
+      "From private ChatGPT-style assistants to retrieval-augmented systems on your data—we ship production-grade GenAI you can trust.",
+    techStack: ["OpenAI", "Claude", "Gemini", "LangChain", "LlamaIndex"],
+    cta: "Build Your AI Copilot"
   },
   {
-    id: "ecommerce-development",
-    icon: "ShoppingCart",
-    title: "Ecommerce Development",
-    headline: "Build high-performing storefronts that convert browsers into buyers",
+    id: "ai-agents",
+    icon: "Bot",
+    title: "AI Agents & Automation",
+    headline: "Autonomous agents that execute multi-step business workflows",
     description:
-      "Custom eCommerce platforms, marketplaces and headless commerce solutions on industry-leading frameworks tailored to your business model.",
-    techStack: ["Shopify Plus", "Magento", "BigCommerce", "WooCommerce", "Salesforce Commerce"],
-    cta: "Accelerate Commerce Growth",
-    color: "orange"
+      "Sales SDRs, support triage, ops co-pilots and research agents that read, decide and act—integrated into the tools you already use.",
+    techStack: ["LangGraph", "CrewAI", "AutoGen", "n8n", "Zapier AI"],
+    cta: "Deploy AI Agents"
   },
   {
-    id: "cloud-devops",
-    icon: "Cloud",
-    title: "Cloud & DevOps",
-    headline: "Scalable, secure & reliable cloud infrastructure for modern enterprises",
-    description:
-      "Cloud migration, multi-cloud architectures, CI/CD pipelines and managed DevOps to make your infrastructure faster, cheaper and more resilient.",
-    techStack: ["AWS", "Azure", "Google Cloud", "Kubernetes", "Docker", "Terraform"],
-    cta: "Power Cloud Capabilities",
-    color: "orange"
-  },
-  {
-    id: "ai-automation",
+    id: "ml-engineering",
     icon: "Brain",
-    title: "AI & Automation",
-    headline: "Automate decisions & gain deeper insights with custom-trained AI models",
+    title: "ML Engineering",
+    headline: "Predictive models tailored to your data and KPIs",
     description:
-      "Predictive analytics, computer vision, NLP, generative AI assistants and intelligent process automation custom-built for your workflows.",
-    techStack: ["TensorFlow", "PyTorch", "OpenAI", "LangChain", "Azure AI"],
-    cta: "Activate AI Advantage",
-    color: "orange"
+      "Forecasting, recommendation engines, churn prediction and risk scoring—engineered, deployed and monitored on modern MLOps stacks.",
+    techStack: ["PyTorch", "TensorFlow", "scikit-learn", "MLflow", "Vertex AI"],
+    cta: "Engineer Smart Models"
+  },
+  {
+    id: "computer-vision",
+    icon: "Eye",
+    title: "Computer Vision",
+    headline: "See, classify and understand the physical world in real-time",
+    description:
+      "Quality inspection, OCR, video analytics and visual search—deployed at the edge or in the cloud with millisecond latency.",
+    techStack: ["YOLO", "OpenCV", "Detectron2", "AWS Rekognition", "Roboflow"],
+    cta: "Activate Vision AI"
   }
 ];
 
 export const technologyDomains = [
   {
-    id: "digital-transformation",
-    name: "Digital Transformation",
-    icon: "Settings",
-    subtitle: "Enterprise platforms for comprehensive digital transformation",
+    id: "generative-ai",
+    name: "Generative AI",
+    icon: "Sparkles",
+    subtitle: "Foundation models, RAG systems and AI assistants",
     platforms: [
-      { name: "Salesforce", icon: "Cloud" },
-      { name: "SAP S/4HANA", icon: "Database" },
-      { name: "Microsoft Dynamics 365", icon: "Grid3x3" },
-      { name: "ServiceNow", icon: "Network" },
-      { name: "Oracle", icon: "Server" },
-      { name: "Workday", icon: "Briefcase" },
-      { name: "SuccessFactors", icon: "TrendingUp" },
-      { name: "NetSuite", icon: "BarChart3" }
-    ]
-  },
-  {
-    id: "ai-automation",
-    name: "AI & Automation",
-    icon: "Bot",
-    subtitle: "AI / ML frameworks and intelligent automation tools",
-    platforms: [
-      { name: "OpenAI", icon: "Sparkles" },
-      { name: "TensorFlow", icon: "Brain" },
-      { name: "PyTorch", icon: "Flame" },
+      { name: "OpenAI GPT", icon: "Sparkles" },
+      { name: "Anthropic Claude", icon: "MessageSquare" },
+      { name: "Google Gemini", icon: "Gem" },
+      { name: "Meta Llama", icon: "Cpu" },
       { name: "LangChain", icon: "Link" },
-      { name: "Azure AI", icon: "Cloud" },
-      { name: "AWS Bedrock", icon: "Server" },
+      { name: "LlamaIndex", icon: "Layers" },
+      { name: "Pinecone", icon: "Database" },
+      { name: "Weaviate", icon: "Boxes" }
+    ]
+  },
+  {
+    id: "ai-agents",
+    name: "AI Agents",
+    icon: "Bot",
+    subtitle: "Multi-agent orchestration and autonomous workflows",
+    platforms: [
+      { name: "LangGraph", icon: "GitBranch" },
+      { name: "CrewAI", icon: "Users" },
+      { name: "AutoGen", icon: "Workflow" },
+      { name: "n8n", icon: "Network" },
+      { name: "Make", icon: "Settings" },
+      { name: "Temporal", icon: "Clock" },
+      { name: "Inngest", icon: "Zap" },
+      { name: "Zapier AI", icon: "Bolt" }
+    ]
+  },
+  {
+    id: "ml-engineering",
+    name: "ML Engineering",
+    icon: "Brain",
+    subtitle: "Production-grade ML pipelines and MLOps",
+    platforms: [
+      { name: "PyTorch", icon: "Flame" },
+      { name: "TensorFlow", icon: "Brain" },
+      { name: "scikit-learn", icon: "Code2" },
+      { name: "MLflow", icon: "GitMerge" },
+      { name: "Vertex AI", icon: "Cloud" },
+      { name: "SageMaker", icon: "Box" },
+      { name: "Databricks", icon: "Database" },
+      { name: "Weights & Biases", icon: "BarChart3" }
+    ]
+  },
+  {
+    id: "computer-vision",
+    name: "Computer Vision",
+    icon: "Eye",
+    subtitle: "Real-time visual intelligence at the edge or cloud",
+    platforms: [
+      { name: "YOLO", icon: "ScanLine" },
+      { name: "OpenCV", icon: "Camera" },
+      { name: "Detectron2", icon: "Focus" },
+      { name: "Roboflow", icon: "Aperture" },
+      { name: "AWS Rekognition", icon: "Cloud" },
       { name: "Hugging Face", icon: "Smile" },
-      { name: "UiPath", icon: "Workflow" }
+      { name: "NVIDIA Triton", icon: "Server" },
+      { name: "ONNX", icon: "Hexagon" }
     ]
   },
   {
-    id: "custom-software",
-    name: "Custom Software",
-    icon: "Code",
-    subtitle: "Modern frameworks for performant custom application development",
+    id: "data-platform",
+    name: "Data Platform",
+    icon: "Database",
+    subtitle: "Modern data stack feeding your AI workloads",
     platforms: [
-      { name: "React", icon: "Atom" },
-      { name: "Node.js", icon: "Hexagon" },
-      { name: "Python", icon: "Code2" },
-      { name: ".NET", icon: "Box" },
-      { name: "Java", icon: "Coffee" },
-      { name: "Next.js", icon: "ArrowRight" },
-      { name: "Angular", icon: "Triangle" },
-      { name: "Vue", icon: "Layers" }
+      { name: "Snowflake", icon: "Snowflake" },
+      { name: "Databricks", icon: "Database" },
+      { name: "BigQuery", icon: "Cloud" },
+      { name: "dbt", icon: "GitBranch" },
+      { name: "Airflow", icon: "Wind" },
+      { name: "Kafka", icon: "Radio" },
+      { name: "Fivetran", icon: "Plug" },
+      { name: "Apache Spark", icon: "Zap" }
     ]
   },
   {
-    id: "ecommerce",
-    name: "eCommerce Development",
-    icon: "ShoppingBag",
-    subtitle: "Industry-leading platforms for B2B and B2C commerce",
-    platforms: [
-      { name: "Shopify Plus", icon: "ShoppingCart" },
-      { name: "Magento", icon: "Store" },
-      { name: "BigCommerce", icon: "Package" },
-      { name: "WooCommerce", icon: "ShoppingBag" },
-      { name: "Salesforce Commerce", icon: "Cloud" },
-      { name: "Adobe Commerce", icon: "Layers" },
-      { name: "PrestaShop", icon: "Box" },
-      { name: "OpenCart", icon: "Truck" }
-    ]
-  },
-  {
-    id: "cloud-devops",
-    name: "Cloud & DevOps",
+    id: "cloud-infra",
+    name: "Cloud & Infra",
     icon: "Cloud",
-    subtitle: "Cloud platforms and DevOps tooling for scalable infrastructure",
+    subtitle: "Scalable, secure cloud foundations for AI workloads",
     platforms: [
       { name: "AWS", icon: "Cloud" },
       { name: "Azure", icon: "CloudCog" },
@@ -145,175 +157,169 @@ export const technologyDomains = [
       { name: "Kubernetes", icon: "Container" },
       { name: "Docker", icon: "Package2" },
       { name: "Terraform", icon: "Boxes" },
-      { name: "Jenkins", icon: "Wrench" },
-      { name: "GitLab", icon: "GitBranch" }
-    ]
-  },
-  {
-    id: "mobility",
-    name: "Mobility",
-    icon: "Smartphone",
-    subtitle: "Cross-platform and native mobile app frameworks",
-    platforms: [
-      { name: "React Native", icon: "Smartphone" },
-      { name: "Flutter", icon: "Feather" },
-      { name: "Swift", icon: "Apple" },
-      { name: "Kotlin", icon: "Android" },
-      { name: "Ionic", icon: "Zap" },
-      { name: "Xamarin", icon: "Phone" },
-      { name: "Expo", icon: "Rocket" },
-      { name: "PWA", icon: "Globe" }
+      { name: "Modal", icon: "Rocket" },
+      { name: "Replicate", icon: "Copy" }
     ]
   }
 ];
 
 export const caseStudies = [
   {
-    id: "pvr",
-    client: "PVR",
-    title: "PVR: App for Immersive Cinema Experience",
-    image: "https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?w=1200&q=80",
-    industry: "Entertainment",
+    id: "realty-lead-ai",
+    client: "InvestFirm Realty",
+    title: "Realty Lead Qualifier: AI Agent That Books Site Visits",
+    image: "https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=1200&q=80",
+    industry: "Real Estate",
     challenge:
-      "A leading multiplex chain, PVR sought to replace their slow, manual ticket booking process and legacy backend with an engaging and data-gathering application.",
+      "A real-estate developer was spending heavily on paid leads but only 4% reached a site-visit—agents were buried under unqualified calls and WhatsApp messages.",
     solution:
-      "We delivered a custom-designed app with a smooth and interactive UI/UX for ticket booking, seat selection, and easy service exploration.",
+      "We built a conversational AI agent that triages every lead in English, Hindi and Gujarati on WhatsApp, scores intent, books visits and hands hot leads to humans.",
     results: [
-      "Boost in online ticket sales by 240%",
-      "60% drop in support tickets",
-      "4.7★ average store rating across iOS & Android",
-      "3x faster booking flow than legacy system"
+      "Lead-to-site-visit rate jumped from 4% to 17%",
+      "68% reduction in sales team response time",
+      "3.1x improvement in marketing ROAS",
+      "24/7 multilingual conversations across 5 projects"
     ]
   },
   {
-    id: "eicher",
-    client: "Eicher Trucks",
-    title: "Eicher: Driving Commercial Vehicle Commerce Online",
-    image: "https://images.unsplash.com/photo-1601584115197-04ecc0da31d1?w=1200&q=80",
-    industry: "Automotive",
-    challenge:
-      "Eicher wanted to establish a strong eCommerce presence for spare parts and accessories to serve dealers and customers across India.",
-    solution:
-      "Built a scalable B2B/B2C ecommerce platform with dealer management, real-time inventory and integrated payments.",
-    results: [
-      "5x growth in online dealer transactions",
-      "Reduced parts ordering cycle from 5 days to 6 hours",
-      "Inventory accuracy improved to 99.2%",
-      "Onboarded 800+ dealers in first year"
-    ]
-  },
-  {
-    id: "ikea",
-    client: "IKEA",
-    title: "IKEA: Warehouse Automation at Scale",
-    image: "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=1200&q=80",
+    id: "retail-recsys",
+    client: "ShopGrid",
+    title: "ShopGrid: Personalized Recommendation Engine",
+    image: "https://images.unsplash.com/photo-1556742400-b5b7c5121f1f?w=1200&q=80",
     industry: "Retail",
     challenge:
-      "IKEA needed automation across warehouses to handle hyper-growth in online orders and reduce manual fulfillment errors.",
+      "A growing D2C marketplace needed personalized product recommendations to lift average order value and reduce paid-acquisition dependence.",
     solution:
-      "We engineered an intelligent warehouse management system with computer-vision based sorting and predictive demand forecasting.",
+      "We engineered a hybrid (collaborative + semantic) recommendation engine running on vector search, served behind a 40ms API on AWS.",
     results: [
-      "43% faster fulfillment per order",
-      "$2.1M annual savings in operational cost",
-      "Picking accuracy improved to 99.8%",
-      "Zero downtime migration of 12 warehouses"
+      "22% lift in average order value",
+      "38% increase in repeat purchase rate",
+      "P99 latency held under 45ms at 5k RPS",
+      "$140k annualized infra cost savings"
     ]
   },
   {
-    id: "haldirams",
-    client: "Haldiram's",
-    title: "Haldiram's: D2C Growth on Cloud",
-    image: "https://images.unsplash.com/photo-1565958011703-44f9829ba187?w=1200&q=80",
-    industry: "FMCG",
+    id: "healthcare-vision",
+    client: "MediCore Labs",
+    title: "MediCore: Vision AI for Radiology Triage",
+    image: "https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=1200&q=80",
+    industry: "Healthcare",
     challenge:
-      "India's most loved snack brand needed a direct-to-consumer ecommerce experience to reduce dependency on marketplaces.",
+      "A diagnostics chain wanted to prioritize urgent chest X-rays in a queue of thousands of scans per day to reduce reporting turnaround.",
     solution:
-      "A fully managed Shopify Plus storefront with subscription, loyalty and a real-time analytics dashboard powered by AWS.",
+      "A computer-vision triage model flags 14 critical findings and reorders the radiologist worklist—deployed on-prem to meet data-residency norms.",
     results: [
-      "320% YoY revenue growth on D2C",
-      "Page load under 1.2s globally",
-      "Repeat customer rate jumped to 38%",
-      "Launched in 3 international markets"
+      "Critical-case turnaround down from 6h to 38min",
+      "94% sensitivity on validation cohort",
+      "Zero PHI ever left customer premises",
+      "FDA Class II audit-ready documentation"
+    ]
+  },
+  {
+    id: "fin-copilot",
+    client: "FinHub",
+    title: "FinHub: AI Copilot for Wealth Advisors",
+    image: "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=1200&q=80",
+    industry: "FinTech",
+    challenge:
+      "Wealth advisors spent 60% of their week summarizing portfolios and drafting client emails instead of advising.",
+    solution:
+      "A secure GenAI copilot that drafts personalized portfolio reviews, answers regulatory questions and auto-schedules client check-ins.",
+    results: [
+      "Advisor productivity up 2.4x",
+      "AUM per advisor grew 31% in 6 months",
+      "All responses cite source documents (audit-ready)",
+      "SOC 2 Type II compliant deployment"
     ]
   }
 ];
 
 export const testimonials = [
   {
-    name: "Rajesh Kumar",
-    title: "VP Engineering, PVR Cinemas",
+    name: "Aman Mehta",
+    title: "Head of Sales, InvestFirm Realty",
     avatar: "https://images.unsplash.com/photo-1560250097-0b93528c311a?w=150&q=80",
     quote:
-      "OrangeMantra is a trustworthy and knowledgeable e-commerce partner. The team delivered our app on time and within budget with impressive engineering quality."
+      "Nexora's AI agent now handles every inbound lead before our sales team sees it. Site-visit bookings tripled in 60 days—this is the most useful AI we have shipped."
   },
   {
-    name: "Anita Sharma",
-    title: "Director of Digital, Eicher",
+    name: "Dr. Priya Iyer",
+    title: "Chief Radiologist, MediCore Labs",
     avatar: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=150&q=80",
     quote:
-      "Their digital transformation expertise helped us roll out a B2B platform that completely changed how our dealer network works. Phenomenal team."
+      "Their vision model integrated cleanly into our PACS without disrupting workflows. Reporting turnaround on critical cases dropped from hours to minutes."
   },
   {
-    name: "Michael O'Connor",
-    title: "Head of Operations, IKEA APAC",
+    name: "Rohan Khurana",
+    title: "CTO, FinHub",
     avatar: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=150&q=80",
     quote:
-      "From discovery to deployment, OrangeMantra has been a strategic partner. Their AI-driven warehouse system saved us millions in the first year."
+      "Dhruv and the Nexora team don't just demo AI—they engineer it for production, with security, evaluation and observability built-in from day one."
   }
 ];
 
 export const values = [
-  { title: "Continuous Learning", icon: "BookOpen", color: "bg-emerald-100 text-emerald-600", desc: "We grow every day by upskilling, experimenting and embracing new technologies." },
-  { title: "Accountability", icon: "ShieldCheck", color: "bg-orange-100 text-orange-600", desc: "We own outcomes end-to-end and stand behind the work we ship." },
-  { title: "Excellence", icon: "Award", color: "bg-amber-100 text-amber-600", desc: "Craftsmanship runs in our DNA—we are obsessed with quality at every layer." },
-  { title: "Transparency", icon: "Eye", color: "bg-sky-100 text-sky-600", desc: "Open communication, honest timelines and clear pricing—always." },
-  { title: "Teamwork", icon: "Users", color: "bg-rose-100 text-rose-600", desc: "Diverse minds collaborate to deliver outcomes greater than the sum of their parts." },
-  { title: "Customer First", icon: "Heart", color: "bg-violet-100 text-violet-600", desc: "Every decision we make starts with the customer impact in mind." }
+  { title: "Outcome over Hype", icon: "Target", color: "bg-violet-100 text-violet-600", desc: "We ship AI that moves a business metric—not slide-deck demos." },
+  { title: "Data Discipline", icon: "ShieldCheck", color: "bg-indigo-100 text-indigo-600", desc: "Privacy, lineage and evaluation baked into every model and pipeline." },
+  { title: "Craft", icon: "Award", color: "bg-fuchsia-100 text-fuchsia-600", desc: "From prompts to infrastructure, we obsess over the details that matter." },
+  { title: "Transparency", icon: "Eye", color: "bg-cyan-100 text-cyan-600", desc: "Honest timelines, weekly demos and clear pricing—always." },
+  { title: "Partnership", icon: "Handshake", color: "bg-emerald-100 text-emerald-600", desc: "We grow with our clients—your KPI is our success metric." },
+  { title: "Continuous Learning", icon: "BookOpen", color: "bg-amber-100 text-amber-600", desc: "In a field moving this fast, learning is the only durable advantage." }
 ];
 
 export const processSteps = [
-  { step: "01", title: "Requirement Gathering", desc: "Deep-dive workshops with stakeholders to understand business goals, users and constraints." },
-  { step: "02", title: "Conceptualizing", desc: "Solution architecture, technology selection and a clear roadmap aligned with ROI." },
-  { step: "03", title: "Designing", desc: "User-centric UX, design systems and clickable prototypes validated with real users." },
-  { step: "04", title: "Development", desc: "Agile sprints with continuous integration, code reviews and demos every two weeks." },
-  { step: "05", title: "Testing & Launch", desc: "Automated QA, performance and security audits before flawless deployment." }
+  { step: "01", title: "Discovery", desc: "Workshops with stakeholders to identify the highest-ROI AI opportunity grounded in your data." },
+  { step: "02", title: "Prototype", desc: "A working prototype in 2–3 weeks to validate value before committing to production." },
+  { step: "03", title: "Engineer", desc: "Production architecture, evals, guardrails, security and observability—built right." },
+  { step: "04", title: "Launch", desc: "Phased rollout with feedback loops, A/B testing and human-in-the-loop where it matters." },
+  { step: "05", title: "Operate & Scale", desc: "Monitoring, fine-tuning and continuous improvement as your data and needs evolve." }
 ];
 
 export const offices = [
-  { city: "Gurugram, India", address: "Plot 16, Echelon, Sector 32, Gurugram, Haryana 122001", phone: "+91 124 410 3201" },
-  { city: "New York, USA", address: "45 Rockefeller Plaza, Suite 2000, New York, NY 10111", phone: "+1 (646) 480-0202" },
-  { city: "London, UK", address: "30 Churchill Place, Canary Wharf, London E14 5RE", phone: "+44 20 3865 7022" },
-  { city: "Dubai, UAE", address: "Office 1907, JBC2, Cluster V, Jumeirah Lakes Towers, Dubai", phone: "+971 4 553 0042" }
+  { city: "Vadodara, India (HQ)", address: "Nexora Labs, Alkapuri, Vadodara, Gujarat 390007", phone: "+91 99042 56613" },
+  { city: "Remote First", address: "Distributed team across India, UAE & SE Asia", phone: "hello@nexora.ai" }
 ];
 
 export const blogPosts = [
-  { id: "ai-retail", title: "How Generative AI Is Reshaping Retail in 2025", category: "AI & ML", date: "Jun 12, 2025", image: "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=800&q=80", excerpt: "From hyper-personalised recommendations to autonomous merchandising, generative AI is rewriting the playbook for modern retailers." },
-  { id: "composable-commerce", title: "Composable Commerce: Why Headless Is The New Default", category: "eCommerce", date: "May 28, 2025", image: "https://images.pexels.com/photos/5833779/pexels-photo-5833779.jpeg?w=800", excerpt: "Composable architectures give enterprise brands the agility to ship faster, integrate deeper and personalise at scale." },
-  { id: "cloud-finops", title: "FinOps: Bringing Engineering And Finance Together On Cloud", category: "Cloud & DevOps", date: "May 14, 2025", image: "https://images.unsplash.com/photo-1644088379091-d574269d422f?w=800&q=80", excerpt: "A practical guide to setting up a FinOps practice that reduces cloud waste without slowing your engineering teams." }
+  { id: "genai-marketing", title: "How Generative AI Is Transforming B2B Marketing in 2026", category: "Generative AI", date: "Today", image: "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=800&q=80", excerpt: "From hyper-personalised outbound to self-improving content engines, GenAI is rewriting the modern marketing stack." },
+  { id: "ai-agents-prod", title: "Building AI Agents That Actually Work in Production", category: "AI Agents", date: "Yesterday", image: "https://images.pexels.com/photos/5833779/pexels-photo-5833779.jpeg?w=800", excerpt: "A practitioner's guide to evaluation, guardrails and observability for agentic systems—lessons from 12 real deployments." },
+  { id: "rag-patterns", title: "5 RAG Patterns We Use to Cut Hallucinations to Near Zero", category: "LLM Engineering", date: "Last Week", image: "https://images.unsplash.com/photo-1644088379091-d574269d422f?w=800&q=80", excerpt: "Hybrid retrieval, query rewriting, reranking, citation enforcement and structured outputs—our production playbook." }
 ];
 
 export const navServices = [
-  { name: "Digital Transformation", href: "/services/digital-transformation" },
-  { name: "eCommerce Development", href: "/services/ecommerce-development" },
-  { name: "AI & Automation", href: "/services/ai-automation" },
-  { name: "Cloud & DevOps", href: "/services/cloud-devops" },
-  { name: "Custom Software", href: "/services/custom-software" },
-  { name: "QA & Testing", href: "/services/qa-testing" },
-  { name: "Salesforce Services", href: "/services/salesforce" },
-  { name: "Mobility Solutions", href: "/services/mobility" }
+  { name: "Generative AI", href: "/services/generative-ai" },
+  { name: "AI Agents & Automation", href: "/services/ai-agents" },
+  { name: "ML Engineering", href: "/services/ml-engineering" },
+  { name: "Computer Vision", href: "/services/computer-vision" },
+  { name: "Data Platform", href: "/services/data-platform" },
+  { name: "AI Strategy & Advisory", href: "/services/ai-strategy" }
 ];
 
 export const navSolutions = [
   { name: "Case Studies", href: "/case-studies" },
   { name: "Our Clients", href: "/clients" },
-  { name: "Industries", href: "/industries" },
-  { name: "Portfolio", href: "/portfolio" }
+  { name: "Industries", href: "/industries" }
 ];
 
 export const navAbout = [
-  { name: "About Us", href: "/about" },
-  { name: "Our Culture", href: "/about#culture" },
-  { name: "Careers", href: "/careers" },
+  { name: "About Nexora", href: "/about" },
+  { name: "Our Approach", href: "/about#culture" },
   { name: "Blog", href: "/blog" },
   { name: "Contact", href: "/contact" }
 ];
+
+export const founder = {
+  name: "Dhruv Patel",
+  title: "Founder & CEO",
+  bio: "Dhruv founded Nexora to bridge the gap between AI's promise and real business outcomes. With a background in performance marketing and machine learning, he focuses on shipping AI that compounds value—one production deployment at a time.",
+  location: "Vadodara, India"
+};
+
+export const social = {
+  linkedin: "https://www.linkedin.com/in/nexora-digital-63893b3a4/",
+  twitter: "https://twitter.com/Nexoradigitall",
+  instagram: "https://www.instagram.com/nexoradigital92",
+  email: "hello@nexora.ai",
+  phone: "+91 99042 56613",
+  whatsapp: "https://wa.me/919904256613"
+};

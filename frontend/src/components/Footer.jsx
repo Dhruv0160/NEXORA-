@@ -1,15 +1,15 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { Linkedin, Twitter, Facebook, Instagram, Youtube, MapPin, Mail, Phone, ArrowRight } from "lucide-react";
-import { offices } from "../data/mock";
+import { Linkedin, Twitter, Instagram, MapPin, Mail, Phone, ArrowRight, Sparkles } from "lucide-react";
+import { offices, social } from "../data/mock";
 
 const FooterCol = ({ title, links }) => (
   <div>
-    <h4 className="text-white font-semibold text-[15px] mb-4">{title}</h4>
+    <h4 className="text-white font-semibold text-[14px] mb-4 tracking-wide">{title}</h4>
     <ul className="space-y-2.5">
       {links.map((l) => (
         <li key={l.label}>
-          <Link to={l.href} className="text-[13.5px] text-neutral-400 hover:text-orange-400 transition-colors">
+          <Link to={l.href} className="text-[13.5px] text-neutral-400 hover:text-white transition-colors">
             {l.label}
           </Link>
         </li>
@@ -20,64 +20,73 @@ const FooterCol = ({ title, links }) => (
 
 const Footer = () => {
   return (
-    <footer className="bg-neutral-950 text-neutral-300">
+    <footer className="relative bg-neutral-950 text-neutral-300 overflow-hidden">
+      {/* Decorative gradient orb */}
+      <div className="absolute -top-40 left-1/2 -translate-x-1/2 w-[800px] h-[400px] bg-gradient-to-r from-violet-600/20 via-indigo-600/20 to-fuchsia-600/20 blur-3xl rounded-full pointer-events-none" />
+
       {/* CTA Strip */}
-      <div className="border-b border-neutral-800">
-        <div className="max-w-[1400px] mx-auto px-6 lg:px-8 py-12 grid md:grid-cols-2 gap-8 items-center">
+      <div className="relative border-b border-white/5">
+        <div className="max-w-[1400px] mx-auto px-6 lg:px-8 py-14 grid md:grid-cols-2 gap-8 items-center">
           <div>
-            <h3 className="text-2xl md:text-3xl font-bold text-white leading-tight">
-              Ready to <span className="text-orange-500">transform your business?</span>
+            <h3 className="text-2xl md:text-4xl font-bold text-white leading-tight tracking-tight">
+              Ready to ship AI that <span className="bg-gradient-to-r from-violet-400 to-fuchsia-400 bg-clip-text text-transparent">moves a metric?</span>
             </h3>
-            <p className="mt-2 text-neutral-400">
-              Let's build technology that drives real business outcomes.
+            <p className="mt-3 text-neutral-400">
+              Let's design a 2-week prototype together.
             </p>
           </div>
           <div className="flex md:justify-end">
             <Link
               to="/contact"
-              className="inline-flex items-center gap-2 bg-orange-600 hover:bg-orange-700 text-white font-semibold rounded-full px-7 h-12 transition-colors"
+              className="inline-flex items-center gap-2 bg-white text-neutral-950 font-semibold rounded-full px-7 h-12 hover:bg-violet-100 transition-colors"
             >
-              Start a Conversation
+              Book a Discovery Call
               <ArrowRight className="w-4 h-4" />
             </Link>
           </div>
         </div>
       </div>
 
-      <div className="max-w-[1400px] mx-auto px-6 lg:px-8 py-16">
+      <div className="relative max-w-[1400px] mx-auto px-6 lg:px-8 py-16">
         <div className="grid lg:grid-cols-5 gap-10">
           <div className="lg:col-span-2">
-            <div className="text-[28px] font-bold tracking-tight">
-              <span className="text-orange-500">orange</span>
-              <span className="text-white">mantra</span>
+            <div className="flex items-center gap-2.5">
+              <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-violet-600 via-indigo-600 to-fuchsia-600 flex items-center justify-center shadow-lg shadow-violet-900/40">
+                <Sparkles className="w-5 h-5 text-white" />
+              </div>
+              <div>
+                <div className="text-[24px] font-bold tracking-tight text-white leading-none">
+                  Nexora<span className="text-violet-400">.</span>
+                </div>
+                <p className="text-[9px] uppercase tracking-[0.2em] text-neutral-500 mt-1">
+                  AI Solutions
+                </p>
+              </div>
             </div>
-            <p className="text-[10px] uppercase tracking-wider text-neutral-400 mt-1">
-              AI Digital Transformation Company
-            </p>
             <p className="mt-5 text-sm text-neutral-400 leading-relaxed max-w-md">
-              Since 2001, we have engineered ambitious technology programs for
-              500+ global brands—spanning AI, cloud, commerce and enterprise
-              transformation.
+              We design, engineer and operate AI systems that compound business
+              value—from generative copilots and autonomous agents to vision and
+              recommendation engines.
             </p>
             <div className="flex items-center gap-3 mt-6">
-              {[Linkedin, Twitter, Facebook, Instagram, Youtube].map((Icon, i) => (
-                <a
-                  key={i}
-                  href="#"
-                  className="w-9 h-9 rounded-full border border-neutral-700 flex items-center justify-center text-neutral-400 hover:text-orange-500 hover:border-orange-500 transition-colors"
-                >
-                  <Icon className="w-4 h-4" />
-                </a>
-              ))}
+              <a href={social.linkedin} target="_blank" rel="noreferrer" className="w-9 h-9 rounded-full border border-white/10 flex items-center justify-center text-neutral-400 hover:text-white hover:bg-violet-600 hover:border-violet-600 transition-colors">
+                <Linkedin className="w-4 h-4" />
+              </a>
+              <a href={social.twitter} target="_blank" rel="noreferrer" className="w-9 h-9 rounded-full border border-white/10 flex items-center justify-center text-neutral-400 hover:text-white hover:bg-violet-600 hover:border-violet-600 transition-colors">
+                <Twitter className="w-4 h-4" />
+              </a>
+              <a href={social.instagram} target="_blank" rel="noreferrer" className="w-9 h-9 rounded-full border border-white/10 flex items-center justify-center text-neutral-400 hover:text-white hover:bg-violet-600 hover:border-violet-600 transition-colors">
+                <Instagram className="w-4 h-4" />
+              </a>
             </div>
           </div>
 
           <FooterCol
             title="Company"
             links={[
-              { label: "About Us", href: "/about" },
-              { label: "Our Culture", href: "/about#culture" },
-              { label: "Careers", href: "/careers" },
+              { label: "About Nexora", href: "/about" },
+              { label: "Our Approach", href: "/about#culture" },
+              { label: "Case Studies", href: "/case-studies" },
               { label: "Blog", href: "/blog" },
               { label: "Contact", href: "/contact" }
             ]}
@@ -85,55 +94,51 @@ const Footer = () => {
           <FooterCol
             title="Services"
             links={[
-              { label: "Digital Transformation", href: "/services/digital-transformation" },
-              { label: "eCommerce Development", href: "/services/ecommerce-development" },
-              { label: "AI & Automation", href: "/services/ai-automation" },
-              { label: "Cloud & DevOps", href: "/services/cloud-devops" },
-              { label: "Custom Software", href: "/services/custom-software" }
+              { label: "Generative AI", href: "/services/generative-ai" },
+              { label: "AI Agents", href: "/services/ai-agents" },
+              { label: "ML Engineering", href: "/services/ml-engineering" },
+              { label: "Computer Vision", href: "/services/computer-vision" },
+              { label: "Data Platform", href: "/services/data-platform" }
             ]}
           />
           <FooterCol
             title="Industries"
             links={[
-              { label: "Retail & eCommerce", href: "/industries" },
-              { label: "Automotive", href: "/industries" },
-              { label: "BFSI", href: "/industries" },
+              { label: "Real Estate", href: "/industries" },
+              { label: "Retail & D2C", href: "/industries" },
               { label: "Healthcare", href: "/industries" },
-              { label: "Manufacturing", href: "/industries" }
+              { label: "FinTech", href: "/industries" },
+              { label: "Education", href: "/industries" }
             ]}
           />
         </div>
 
-        {/* Offices */}
-        <div className="mt-14 pt-10 border-t border-neutral-800">
-          <h4 className="text-white font-semibold mb-6">Global Offices</h4>
-          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
-            {offices.map((o) => (
-              <div key={o.city} className="text-sm">
-                <div className="flex items-center gap-2 text-white font-semibold">
-                  <MapPin className="w-4 h-4 text-orange-500" />
-                  {o.city}
-                </div>
-                <p className="text-neutral-400 mt-2 leading-relaxed">{o.address}</p>
-                <p className="text-neutral-400 mt-1 flex items-center gap-2">
-                  <Phone className="w-3.5 h-3.5" /> {o.phone}
-                </p>
+        <div className="mt-14 pt-10 border-t border-white/5 grid md:grid-cols-2 gap-8">
+          {offices.map((o) => (
+            <div key={o.city} className="text-sm">
+              <div className="flex items-center gap-2 text-white font-semibold">
+                <MapPin className="w-4 h-4 text-violet-400" />
+                {o.city}
               </div>
-            ))}
-          </div>
+              <p className="text-neutral-400 mt-2 leading-relaxed">{o.address}</p>
+              <p className="text-neutral-400 mt-1 flex items-center gap-2">
+                <Phone className="w-3.5 h-3.5" /> {o.phone}
+              </p>
+            </div>
+          ))}
         </div>
       </div>
 
-      <div className="border-t border-neutral-800">
+      <div className="relative border-t border-white/5">
         <div className="max-w-[1400px] mx-auto px-6 lg:px-8 py-5 flex flex-col md:flex-row items-center justify-between gap-3">
           <p className="text-xs text-neutral-500">
-            © {new Date().getFullYear()} OrangeMantra. All rights reserved.
+            © {new Date().getFullYear()} Nexora AI Solutions. All rights reserved.
           </p>
           <div className="flex items-center gap-5 text-xs text-neutral-500">
-            <Link to="/privacy" className="hover:text-orange-500">Privacy Policy</Link>
-            <Link to="/terms" className="hover:text-orange-500">Terms of Use</Link>
-            <a className="flex items-center gap-1.5 hover:text-orange-500" href="mailto:info@orangemantra.com">
-              <Mail className="w-3.5 h-3.5" /> info@orangemantra.com
+            <Link to="/privacy" className="hover:text-white">Privacy Policy</Link>
+            <Link to="/terms" className="hover:text-white">Terms of Service</Link>
+            <a className="flex items-center gap-1.5 hover:text-white" href={`mailto:${social.email}`}>
+              <Mail className="w-3.5 h-3.5" /> {social.email}
             </a>
           </div>
         </div>

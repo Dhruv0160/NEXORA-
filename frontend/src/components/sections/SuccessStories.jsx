@@ -12,15 +12,15 @@ const SuccessStories = () => {
     <section className="py-20 lg:py-24 bg-neutral-50">
       <div className="max-w-[1400px] mx-auto px-6 lg:px-8">
         <div className="text-center max-w-3xl mx-auto mb-12">
-          <span className="inline-block px-5 py-1.5 rounded-full bg-orange-100 text-orange-700 text-sm font-medium">
+          <span className="inline-block px-5 py-1.5 rounded-full bg-violet-100 text-violet-700 text-sm font-medium">
             Success Stories
           </span>
-          <h2 className="mt-4 text-3xl md:text-5xl font-bold tracking-tight text-neutral-900">
-            From Technology Projects into <span className="text-orange-600">Business Success Stories</span>
+          <h2 className="mt-4 text-3xl md:text-5xl font-bold tracking-tight text-neutral-950">
+            AI in production, <span className="bg-gradient-to-r from-violet-600 to-fuchsia-600 bg-clip-text text-transparent">measured in revenue</span>
           </h2>
           <p className="mt-4 text-neutral-600 text-lg">
-            When IKEA demanded automation, we innovated. When Eicher aimed for eCommerce presence,
-            we facilitated. When PVR needed tech empowerment, we served it.
+            From a 4×17 lift in real-estate site visits to FDA-ready vision AI in
+            healthcare—stories told through outcomes, not buzzwords.
           </p>
         </div>
 
@@ -33,8 +33,8 @@ const SuccessStories = () => {
               className={cn(
                 "px-5 py-2.5 rounded-full text-sm font-medium transition-all border",
                 active === i
-                  ? "bg-orange-600 text-white border-orange-600 shadow-md shadow-orange-200"
-                  : "bg-white text-neutral-700 border-neutral-200 hover:border-orange-300"
+                  ? "bg-violet-600 text-white border-violet-600 shadow-md shadow-violet-200"
+                  : "bg-white text-neutral-700 border-neutral-200 hover:border-violet-300"
               )}
             >
               {c.client}
@@ -79,7 +79,7 @@ const SuccessStories = () => {
                 <ul className="space-y-2">
                   {story.results.map((r) => (
                     <li key={r} className="flex items-start gap-2 text-sm text-neutral-700">
-                      <Check className="w-4 h-4 text-orange-600 mt-0.5 flex-shrink-0" strokeWidth={3} />
+                      <Check className="w-4 h-4 text-violet-600 mt-0.5 flex-shrink-0" strokeWidth={3} />
                       {r}
                     </li>
                   ))}
@@ -88,7 +88,7 @@ const SuccessStories = () => {
 
               <Link
                 to="/case-studies"
-                className="mt-7 inline-flex items-center gap-2 bg-neutral-900 hover:bg-orange-600 text-white font-semibold px-6 h-11 rounded-full transition-colors"
+                className="mt-7 inline-flex items-center gap-2 bg-neutral-900 hover:bg-violet-600 text-white font-semibold px-6 h-11 rounded-full transition-colors"
               >
                 Explore All Case Studies
                 <ArrowRight className="w-4 h-4" />

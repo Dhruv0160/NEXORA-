@@ -1,34 +1,49 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, Zap } from "lucide-react";
 
 const stats = [
-  { value: "750+", label: "eCommerce Empires Built" },
-  { value: "75+", label: "AI Systems Deployed" },
-  { value: "500+", label: "Global Brands Served" },
-  { value: "95%", label: "Client Retention Rate" }
+  { value: "50+", label: "AI Models in Production" },
+  { value: "12+", label: "Industries Served" },
+  { value: "3.2x", label: "Avg. ROI on AI Spend" },
+  { value: "100%", label: "Custom Built for You" }
 ];
 
 const CTASection = () => {
   return (
-    <section className="relative py-20 lg:py-24 overflow-hidden bg-neutral-950">
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(255,106,0,0.25),transparent_60%)]" />
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_bottom_left,rgba(255,106,0,0.18),transparent_55%)]" />
+    <section className="relative py-20 lg:py-28 overflow-hidden bg-neutral-950">
+      {/* Decorative gradients */}
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(124,58,237,0.35),transparent_55%)]" />
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_bottom_left,rgba(217,70,239,0.25),transparent_55%)]" />
+      {/* Grid pattern */}
+      <div
+        className="absolute inset-0 opacity-[0.08] pointer-events-none"
+        style={{
+          backgroundImage:
+            "linear-gradient(to right, #fff 1px, transparent 1px), linear-gradient(to bottom, #fff 1px, transparent 1px)",
+          backgroundSize: "48px 48px"
+        }}
+      />
 
       <div className="relative max-w-[1400px] mx-auto px-6 lg:px-8">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div>
-            <h2 className="text-3xl md:text-5xl font-bold text-white leading-tight">
-              We've Helped Leaders <br />
-              <span className="text-orange-500">Outlast Trends.</span>
+            <span className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-white/10 backdrop-blur border border-white/10 text-xs font-medium text-violet-200">
+              <Zap className="w-3.5 h-3.5" /> Built for production
+            </span>
+            <h2 className="mt-5 text-3xl md:text-5xl font-bold text-white leading-[1.1] tracking-tight">
+              From idea to deployed AI <br />
+              <span className="bg-gradient-to-r from-violet-400 via-fuchsia-400 to-pink-400 bg-clip-text text-transparent">
+                in weeks, not quarters.
+              </span>
             </h2>
-            <p className="mt-5 text-neutral-300 text-lg leading-relaxed">
-              Two decades of building enduring digital systems for the world's most
-              ambitious brands—and we are just getting started.
+            <p className="mt-5 text-neutral-300 text-lg leading-relaxed max-w-lg">
+              We pair senior engineers, applied scientists and product thinkers
+              to ship AI that actually changes a business metric.
             </p>
             <Link to="/contact">
-              <button className="mt-8 inline-flex items-center gap-2 bg-orange-600 hover:bg-orange-700 text-white font-semibold px-7 h-12 rounded-full shadow-lg shadow-orange-900/50 transition-all">
-                Power My Tech Capability
+              <button className="mt-8 inline-flex items-center gap-2 bg-white text-neutral-950 hover:bg-violet-100 font-semibold px-7 h-12 rounded-full transition-all">
+                Start an AI Project
                 <ArrowRight className="w-4 h-4" />
               </button>
             </Link>
@@ -38,9 +53,9 @@ const CTASection = () => {
             {stats.map((s) => (
               <div
                 key={s.label}
-                className="bg-white/5 backdrop-blur border border-white/10 rounded-2xl p-6 hover:border-orange-500/50 transition-colors"
+                className="bg-white/5 backdrop-blur border border-white/10 rounded-2xl p-6 hover:border-violet-400/40 hover:bg-white/10 transition-all"
               >
-                <div className="text-4xl font-bold text-white">{s.value}</div>
+                <div className="text-4xl font-bold text-white tracking-tight">{s.value}</div>
                 <div className="mt-1 text-sm text-neutral-400">{s.label}</div>
               </div>
             ))}

@@ -10,7 +10,7 @@ const BrandMarquee = () => {
           {doubled.map((b, i) => (
             <div
               key={`${b}-${i}`}
-              className="flex-shrink-0 px-6 py-3 text-2xl font-bold text-neutral-400 hover:text-orange-600 transition-colors tracking-tight"
+              className="flex-shrink-0 px-6 py-3 text-2xl font-bold text-neutral-400 hover:text-violet-600 transition-colors tracking-tight"
               style={{ fontFamily: "Georgia, serif" }}
             >
               {b}

@@ -13,28 +13,28 @@ const AboutPage = () => {
   return (
     <>
       {/* Hero */}
-      <section className="bg-gradient-to-br from-orange-50 via-white to-white py-20 lg:py-24">
+      <section className="bg-gradient-to-br from-violet-50 via-white to-fuchsia-50/40 py-20 lg:py-24">
         <div className="max-w-[1400px] mx-auto px-6 lg:px-8 grid lg:grid-cols-2 gap-12 items-center">
           <div>
-            <span className="inline-block px-4 py-1.5 rounded-full bg-orange-600 text-white text-sm font-medium">
-              About Us
+            <span className="inline-block px-4 py-1.5 rounded-full bg-violet-100 text-violet-700 text-sm font-medium">
+              About Nexora
             </span>
-            <h1 className="mt-5 text-4xl md:text-6xl font-bold tracking-tight leading-[1.05] text-neutral-900">
-              We're the right <span className="text-orange-600">tech-solutions partner</span> for your digital innovation needs.
+            <h1 className="mt-5 text-4xl md:text-6xl font-bold tracking-tight leading-[1.05] text-neutral-950">
+              An AI partner that ships <span className="bg-gradient-to-r from-violet-600 to-fuchsia-600 bg-clip-text text-transparent">outcomes</span>, not slide decks.
             </h1>
             <p className="mt-6 text-lg text-neutral-600 leading-relaxed">
-              Since 2001, OrangeMantra has been digitally transforming and accelerating
-              businesses across 30+ industries. "Orange" stands for innovation, "Mantra"
-              for the magic of disciplined execution.
+              Founded in Vadodara, Nexora is an applied AI lab. We pair senior
+              engineers and applied scientists with product thinkers to deliver
+              AI systems that compound business value in production.
             </p>
             <Link to="/contact">
-              <button className="mt-7 inline-flex items-center gap-2 bg-orange-600 hover:bg-orange-700 text-white font-semibold px-7 h-12 rounded-full transition-colors">
-                Let's Collaborate <ArrowRight className="w-4 h-4" />
+              <button className="mt-7 inline-flex items-center gap-2 bg-neutral-950 hover:bg-violet-700 text-white font-semibold px-7 h-12 rounded-full transition-colors">
+                Talk to the Founder <ArrowRight className="w-4 h-4" />
               </button>
             </Link>
           </div>
           <div className="relative">
-            <div className="aspect-[4/3] rounded-3xl overflow-hidden shadow-2xl shadow-orange-100">
+            <div className="aspect-[4/3] rounded-3xl overflow-hidden shadow-2xl shadow-violet-100">
               <img
                 src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=900&q=80"
                 alt="Our team"
@@ -42,29 +42,44 @@ const AboutPage = () => {
               />
             </div>
             <div className="absolute -bottom-6 -left-6 bg-white rounded-2xl shadow-xl p-5 border border-neutral-100">
-              <div className="text-3xl font-bold text-orange-600">21+ Years</div>
-              <div className="text-sm text-neutral-600">in the market</div>
+              <div className="text-3xl font-bold bg-gradient-to-r from-violet-600 to-fuchsia-600 bg-clip-text text-transparent">50+</div>
+              <div className="text-sm text-neutral-600">AI Models Deployed</div>
             </div>
             <div className="absolute -top-6 -right-6 bg-white rounded-2xl shadow-xl p-5 border border-neutral-100">
-              <div className="text-3xl font-bold text-orange-600">1500+</div>
-              <div className="text-sm text-neutral-600">Projects Delivered</div>
+              <div className="text-3xl font-bold bg-gradient-to-r from-violet-600 to-fuchsia-600 bg-clip-text text-transparent">3.2x</div>
+              <div className="text-sm text-neutral-600">Avg. ROI Uplift</div>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Vision */}
+      {/* Founder */}
       <section className="py-20 bg-white">
-        <div className="max-w-[1100px] mx-auto px-6 lg:px-8 text-center">
-          <span className="text-sm font-bold tracking-widest text-orange-600 uppercase">Our Vision</span>
-          <h2 className="mt-3 text-3xl md:text-5xl font-bold tracking-tight text-neutral-900">
-            Digitally transforming and <span className="text-orange-600">accelerating businesses</span>
-          </h2>
-          <p className="mt-6 text-lg text-neutral-600 leading-relaxed">
-            OrangeMantra empowers enterprises with innovative tech solutions to stay ahead
-            in an increasingly digital-driven market. We combine deep engineering, design
-            thinking and domain expertise to deliver outcomes that matter.
-          </p>
+        <div className="max-w-[1100px] mx-auto px-6 lg:px-8 grid md:grid-cols-[280px_1fr] gap-10 items-center">
+          <div className="relative w-[260px] h-[260px] mx-auto md:mx-0">
+            <div className="absolute inset-0 bg-gradient-to-br from-violet-500 to-fuchsia-500 rounded-3xl rotate-6" />
+            <img
+              src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&q=80"
+              alt="Dhruv Patel"
+              className="relative w-full h-full object-cover rounded-3xl border-4 border-white shadow-xl"
+            />
+          </div>
+          <div>
+            <span className="text-sm font-bold tracking-widest text-violet-600 uppercase">Founder & Vision</span>
+            <h2 className="mt-2 text-3xl md:text-4xl font-bold tracking-tight text-neutral-950">
+              Meet Dhruv Patel
+            </h2>
+            <p className="mt-4 text-neutral-600 leading-relaxed">
+              Dhruv founded Nexora to bridge the gap between AI's promise and
+              real business outcomes. With a background in performance marketing
+              and machine learning, he focuses on shipping AI that compounds
+              value—one production deployment at a time.
+            </p>
+            <p className="mt-3 text-neutral-600 leading-relaxed">
+              Based in Vadodara, India and serving clients across India, UAE
+              and Southeast Asia.
+            </p>
+          </div>
         </div>
       </section>
 
@@ -73,7 +88,7 @@ const AboutPage = () => {
         <div className="max-w-[1400px] mx-auto px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-5xl font-bold tracking-tight text-neutral-900">
-              Our <span className="text-orange-600">Culture & Values</span>
+              Our <span className="text-violet-600">Culture & Values</span>
             </h2>
             <p className="mt-4 text-lg text-neutral-600">The principles that guide everything we do.</p>
           </div>
@@ -98,22 +113,22 @@ const AboutPage = () => {
       <section className="py-20 bg-white">
         <div className="max-w-[1400px] mx-auto px-6 lg:px-8">
           <div className="text-center mb-12">
-            <span className="text-sm font-bold tracking-widest text-orange-600 uppercase">Our Process</span>
+            <span className="text-sm font-bold tracking-widest text-violet-600 uppercase">Our Process</span>
             <h2 className="mt-3 text-3xl md:text-5xl font-bold tracking-tight text-neutral-900">
-              How we <span className="text-orange-600">deliver excellence</span>
+              How we <span className="text-violet-600">deliver excellence</span>
             </h2>
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-5 gap-5">
             {processSteps.map((s, i) => (
               <div
                 key={s.step}
-                className="relative bg-white border border-neutral-200 rounded-2xl p-6 hover:border-orange-400 hover:shadow-md transition-all"
+                className="relative bg-white border border-neutral-200 rounded-2xl p-6 hover:border-violet-400 hover:shadow-md transition-all"
               >
-                <div className="text-5xl font-bold text-orange-200">{s.step}</div>
+                <div className="text-5xl font-bold text-violet-200">{s.step}</div>
                 <h3 className="mt-3 text-base font-bold text-neutral-900">{s.title}</h3>
                 <p className="mt-2 text-sm text-neutral-600 leading-relaxed">{s.desc}</p>
                 {i < processSteps.length - 1 && (
-                  <ArrowRight className="hidden lg:block absolute top-1/2 -right-3 w-6 h-6 text-orange-300" />
+                  <ArrowRight className="hidden lg:block absolute top-1/2 -right-3 w-6 h-6 text-violet-300" />
                 )}
               </div>
             ))}

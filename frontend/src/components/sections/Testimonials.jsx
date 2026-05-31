@@ -16,16 +16,16 @@ const Testimonials = () => {
     <section className="py-20 lg:py-24 bg-white">
       <div className="max-w-[1100px] mx-auto px-6 lg:px-8">
         <div className="text-center mb-12">
-          <span className="inline-block px-5 py-1.5 rounded-full bg-orange-100 text-orange-700 text-sm font-medium">
-            Voices of Trust
+          <span className="inline-block px-5 py-1.5 rounded-full bg-violet-100 text-violet-700 text-sm font-medium">
+            Customer Stories
           </span>
-          <h2 className="mt-4 text-3xl md:text-5xl font-bold tracking-tight text-neutral-900">
-            What our <span className="text-orange-600">clients say</span>
+          <h2 className="mt-4 text-3xl md:text-5xl font-bold tracking-tight text-neutral-950">
+            Loved by teams shipping <span className="bg-gradient-to-r from-violet-600 to-fuchsia-600 bg-clip-text text-transparent">real AI</span>
           </h2>
         </div>
 
-        <div className="relative bg-gradient-to-br from-orange-50 to-white border border-orange-100 rounded-3xl p-10 lg:p-14">
-          <Quote className="absolute top-8 left-8 w-14 h-14 text-orange-200" />
+        <div className="relative bg-gradient-to-br from-violet-50 to-white border border-violet-100 rounded-3xl p-10 lg:p-14">
+          <Quote className="absolute top-8 left-8 w-14 h-14 text-violet-200" />
 
           <div className="relative">
             <p className="text-xl md:text-2xl italic text-neutral-800 leading-relaxed text-center max-w-3xl mx-auto">
@@ -47,7 +47,7 @@ const Testimonials = () => {
           <div className="mt-8 flex items-center justify-center gap-3">
             <button
               onClick={() => setIdx((i) => (i - 1 + testimonials.length) % testimonials.length)}
-              className="w-10 h-10 rounded-full border border-neutral-200 hover:border-orange-400 hover:bg-orange-50 flex items-center justify-center transition-colors"
+              className="w-10 h-10 rounded-full border border-neutral-200 hover:border-violet-400 hover:bg-violet-50 flex items-center justify-center transition-colors"
               aria-label="Previous"
             >
               <ChevronLeft className="w-4 h-4" />
@@ -57,14 +57,14 @@ const Testimonials = () => {
                 <button
                   key={i}
                   onClick={() => setIdx(i)}
-                  className={"h-2 rounded-full transition-all " + (i === idx ? "w-8 bg-orange-600" : "w-2 bg-neutral-300")}
+                  className={"h-2 rounded-full transition-all " + (i === idx ? "w-8 bg-violet-600" : "w-2 bg-neutral-300")}
                   aria-label={`Go to testimonial ${i + 1}`}
                 />
               ))}
             </div>
             <button
               onClick={() => setIdx((i) => (i + 1) % testimonials.length)}
-              className="w-10 h-10 rounded-full border border-neutral-200 hover:border-orange-400 hover:bg-orange-50 flex items-center justify-center transition-colors"
+              className="w-10 h-10 rounded-full border border-neutral-200 hover:border-violet-400 hover:bg-violet-50 flex items-center justify-center transition-colors"
               aria-label="Next"
             >
               <ChevronRight className="w-4 h-4" />

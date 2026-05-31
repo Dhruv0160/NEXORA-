@@ -36,16 +36,16 @@ const ContactPage = () => {
 
   return (
     <>
-      <section className="bg-gradient-to-br from-orange-50 via-white to-white py-16">
+      <section className="bg-gradient-to-br from-violet-50 via-white to-fuchsia-50/40 py-16">
         <div className="max-w-[1400px] mx-auto px-6 lg:px-8 text-center">
-          <span className="inline-block px-5 py-1.5 rounded-full bg-orange-600 text-white text-sm font-medium">
+          <span className="inline-block px-5 py-1.5 rounded-full bg-violet-100 text-violet-700 text-sm font-medium">
             Get in Touch
           </span>
-          <h1 className="mt-4 text-4xl md:text-6xl font-bold tracking-tight text-neutral-900">
-            Let's build something <span className="text-orange-600">remarkable</span>
+          <h1 className="mt-4 text-4xl md:text-6xl font-bold tracking-tight text-neutral-950">
+            Let's build something <span className="bg-gradient-to-r from-violet-600 to-fuchsia-600 bg-clip-text text-transparent">that ships.</span>
           </h1>
           <p className="mt-4 text-lg text-neutral-600 max-w-2xl mx-auto">
-            Tell us about your project—our solution architects will get back to you within 24 hours.
+            Tell us about your project—Dhruv and the team will get back to you within 24 hours.
           </p>
         </div>
       </section>
@@ -55,12 +55,12 @@ const ContactPage = () => {
           <div className="bg-white border border-neutral-200 rounded-3xl p-8 lg:p-10 shadow-sm">
             {submitted ? (
               <div className="text-center py-10">
-                <CheckCircle2 className="w-16 h-16 text-orange-600 mx-auto" />
+                <CheckCircle2 className="w-16 h-16 text-violet-600 mx-auto" />
                 <h3 className="mt-4 text-2xl font-bold text-neutral-900">Thanks for reaching out!</h3>
                 <p className="mt-2 text-neutral-600">A senior consultant will email you within 24 hours.</p>
                 <button
                   onClick={() => { setSubmitted(false); setForm({ name:"", email:"", phone:"", company:"", message:"", consent:false }); }}
-                  className="mt-6 text-orange-600 font-semibold hover:underline"
+                  className="mt-6 text-violet-600 font-semibold hover:underline"
                 >
                   Send another message
                 </button>
@@ -71,30 +71,30 @@ const ContactPage = () => {
                 <div className="grid sm:grid-cols-2 gap-4">
                   <div>
                     <label className="block text-sm font-medium text-neutral-700 mb-1.5">Full Name *</label>
-                    <input required name="name" value={form.name} onChange={onChange} className="w-full h-11 px-4 rounded-lg border border-neutral-200 focus:border-orange-500 focus:ring-2 focus:ring-orange-200 outline-none transition" placeholder="Jane Doe" />
+                    <input required name="name" value={form.name} onChange={onChange} className="w-full h-11 px-4 rounded-lg border border-neutral-200 focus:border-violet-500 focus:ring-2 focus:ring-violet-200 outline-none transition" placeholder="Jane Doe" />
                   </div>
                   <div>
                     <label className="block text-sm font-medium text-neutral-700 mb-1.5">Work Email *</label>
-                    <input required type="email" name="email" value={form.email} onChange={onChange} className="w-full h-11 px-4 rounded-lg border border-neutral-200 focus:border-orange-500 focus:ring-2 focus:ring-orange-200 outline-none transition" placeholder="jane@company.com" />
+                    <input required type="email" name="email" value={form.email} onChange={onChange} className="w-full h-11 px-4 rounded-lg border border-neutral-200 focus:border-violet-500 focus:ring-2 focus:ring-violet-200 outline-none transition" placeholder="jane@company.com" />
                   </div>
                   <div>
                     <label className="block text-sm font-medium text-neutral-700 mb-1.5">Phone</label>
-                    <input name="phone" value={form.phone} onChange={onChange} className="w-full h-11 px-4 rounded-lg border border-neutral-200 focus:border-orange-500 focus:ring-2 focus:ring-orange-200 outline-none transition" placeholder="+1 555 123 4567" />
+                    <input name="phone" value={form.phone} onChange={onChange} className="w-full h-11 px-4 rounded-lg border border-neutral-200 focus:border-violet-500 focus:ring-2 focus:ring-violet-200 outline-none transition" placeholder="+1 555 123 4567" />
                   </div>
                   <div>
                     <label className="block text-sm font-medium text-neutral-700 mb-1.5">Company</label>
-                    <input name="company" value={form.company} onChange={onChange} className="w-full h-11 px-4 rounded-lg border border-neutral-200 focus:border-orange-500 focus:ring-2 focus:ring-orange-200 outline-none transition" placeholder="Acme Inc." />
+                    <input name="company" value={form.company} onChange={onChange} className="w-full h-11 px-4 rounded-lg border border-neutral-200 focus:border-violet-500 focus:ring-2 focus:ring-violet-200 outline-none transition" placeholder="Acme Inc." />
                   </div>
                 </div>
                 <div>
                   <label className="block text-sm font-medium text-neutral-700 mb-1.5">Tell us about your project *</label>
-                  <textarea required name="message" value={form.message} onChange={onChange} rows={5} className="w-full px-4 py-3 rounded-lg border border-neutral-200 focus:border-orange-500 focus:ring-2 focus:ring-orange-200 outline-none transition resize-none" placeholder="Briefly describe your goals, timeline and any constraints..." />
+                  <textarea required name="message" value={form.message} onChange={onChange} rows={5} className="w-full px-4 py-3 rounded-lg border border-neutral-200 focus:border-violet-500 focus:ring-2 focus:ring-violet-200 outline-none transition resize-none" placeholder="Briefly describe your goals, timeline and any constraints..." />
                 </div>
                 <label className="flex items-start gap-2.5 text-sm text-neutral-600 cursor-pointer">
-                  <input type="checkbox" name="consent" checked={form.consent} onChange={onChange} className="mt-0.5 accent-orange-600 w-4 h-4" />
-                  <span>I consent to OrangeMantra processing my data in accordance with the privacy policy.</span>
+                  <input type="checkbox" name="consent" checked={form.consent} onChange={onChange} className="mt-0.5 accent-violet-600 w-4 h-4" />
+                  <span>I consent to Nexora processing my data in accordance with the privacy policy.</span>
                 </label>
-                <button type="submit" className="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-orange-600 hover:bg-orange-700 text-white font-semibold px-7 h-12 rounded-full transition-colors shadow-md">
+                <button type="submit" className="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-violet-600 hover:bg-violet-700 text-white font-semibold px-7 h-12 rounded-full transition-colors shadow-md">
                   Send Message <Send className="w-4 h-4" />
                 </button>
               </form>
@@ -102,21 +102,24 @@ const ContactPage = () => {
           </div>
 
           <div className="space-y-6">
-            <div className="bg-orange-600 text-white rounded-3xl p-8">
+            <div className="bg-gradient-to-br from-violet-600 via-indigo-600 to-fuchsia-600 text-white rounded-3xl p-8 shadow-xl shadow-violet-200">
               <h3 className="text-xl font-bold">Quick contact</h3>
               <div className="mt-5 space-y-4">
-                <a href="mailto:info@orangemantra.com" className="flex items-center gap-3 hover:opacity-90">
-                  <Mail className="w-5 h-5" /> info@orangemantra.com
+                <a href="mailto:hello@nexora.ai" className="flex items-center gap-3 hover:opacity-90">
+                  <Mail className="w-5 h-5" /> hello@nexora.ai
                 </a>
-                <a href="tel:+911244103201" className="flex items-center gap-3 hover:opacity-90">
-                  <Phone className="w-5 h-5" /> +91 124 410 3201
+                <a href="tel:+919904256613" className="flex items-center gap-3 hover:opacity-90">
+                  <Phone className="w-5 h-5" /> +91 99042 56613
+                </a>
+                <a href="https://wa.me/919904256613" target="_blank" rel="noreferrer" className="flex items-center gap-3 hover:opacity-90">
+                  <Send className="w-5 h-5" /> WhatsApp us
                 </a>
               </div>
             </div>
             {offices.map((o) => (
               <div key={o.city} className="bg-white border border-neutral-200 rounded-2xl p-6">
                 <div className="flex items-center gap-2 font-bold text-neutral-900">
-                  <MapPin className="w-4 h-4 text-orange-600" /> {o.city}
+                  <MapPin className="w-4 h-4 text-violet-600" /> {o.city}
                 </div>
                 <p className="mt-2 text-sm text-neutral-600">{o.address}</p>
                 <p className="mt-1 text-sm text-neutral-500">{o.phone}</p>
