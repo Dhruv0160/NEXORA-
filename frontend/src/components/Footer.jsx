@@ -1,7 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { Linkedin, Twitter, Instagram, MapPin, Mail, Phone, ArrowRight, Sparkles } from "lucide-react";
+import { Linkedin, Twitter, Instagram, MapPin, Mail, Phone, ArrowRight } from "lucide-react";
 import { offices, social } from "../data/mock";
+import NexoraX from "./NexoraX";
 
 const FooterCol = ({ title, links }) => (
   <div>
@@ -51,14 +52,9 @@ const Footer = () => {
         <div className="grid lg:grid-cols-5 gap-10">
           <div className="lg:col-span-2">
             <div className="flex items-center gap-3">
-              <span className="font-bold tracking-tight text-[30px] leading-none">
+              <span className="font-bold tracking-tight text-[30px] leading-none flex items-center">
                 <span className="text-white">Ne</span>
-                <span
-                  className="text-blue-400 inline-block mx-[-1px]"
-                  style={{ fontFamily: "'Space Grotesk', sans-serif", fontWeight: 800, fontStyle: "italic" }}
-                >
-                  X
-                </span>
+                <NexoraX className="w-[28px] h-[28px] text-blue-400 mx-[1px]" />
                 <span className="text-white">ora</span>
               </span>
               <p className="text-[10px] uppercase tracking-[0.2em] text-neutral-500 border-l border-white/10 pl-3">

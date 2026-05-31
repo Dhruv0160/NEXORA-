@@ -1,9 +1,10 @@
 import React, { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
-import { ChevronDown, Search, Menu, X, Sparkles } from "lucide-react";
+import { ChevronDown, Search, Menu, X } from "lucide-react";
 import { Button } from "./ui/button";
 import { navServices, navSolutions, navAbout } from "../data/mock";
 import { cn } from "../lib/utils";
+import NexoraX from "./NexoraX";
 
 const NavDropdown = ({ label, items }) => {
   const [open, setOpen] = useState(false);
@@ -38,14 +39,9 @@ const NavDropdown = ({ label, items }) => {
 
 const Logo = () => (
   <Link to="/" className="flex items-center gap-3 group">
-    <span className="font-bold tracking-tight text-[28px] leading-none select-none">
+    <span className="font-bold tracking-tight text-[28px] leading-none select-none flex items-center">
       <span className="text-neutral-950">Ne</span>
-      <span
-        className="text-blue-600 inline-block mx-[-1px]"
-        style={{ fontFamily: "'Space Grotesk', sans-serif", fontWeight: 800, fontStyle: "italic" }}
-      >
-        X
-      </span>
+      <NexoraX className="w-[26px] h-[26px] text-blue-600 mx-[1px]" />
       <span className="text-neutral-950">ora</span>
     </span>
     <span className="hidden sm:inline-block text-[9px] font-semibold text-neutral-500 tracking-[0.18em] uppercase border-l border-neutral-200 pl-3">
