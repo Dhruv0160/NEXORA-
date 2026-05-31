@@ -276,7 +276,7 @@ export const processSteps = [
 ];
 
 export const offices = [
-  { city: "Vadodara, India (HQ)", address: "Nexora Labs, Alkapuri, Vadodara, Gujarat 390007", phone: "+91 99042 56613" },
+  { city: "Vadodara, India (HQ)", address: "FF-26 Sunmilan Complex, Near Waghodia Chowkdi, Waghodia Road, Vadodara - 390019", phone: "+91 99042 56613" },
   { city: "Remote First", address: "Distributed team across India, UAE & SE Asia", phone: "hello@nexora.ai" }
 ];
 
