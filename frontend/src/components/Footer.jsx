@@ -52,10 +52,8 @@ const Footer = () => {
         <div className="grid lg:grid-cols-5 gap-10">
           <div className="lg:col-span-2">
             <div className="flex items-center gap-3">
-              <span className="font-bold tracking-tight text-[30px] leading-none flex items-center">
-                <span className="text-white">Ne</span>
-                <NexoraX className="w-[28px] h-[28px] text-blue-400 mx-[1px]" />
-                <span className="text-white">ora</span>
+              <span className="font-bold tracking-tight text-[28px] leading-none text-white">
+                NEXORA
               </span>
               <p className="text-[10px] uppercase tracking-[0.2em] text-neutral-500 border-l border-white/10 pl-3">
                 AI Solutions

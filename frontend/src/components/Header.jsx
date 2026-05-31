@@ -39,10 +39,8 @@ const NavDropdown = ({ label, items }) => {
 
 const Logo = () => (
   <Link to="/" className="flex items-center gap-3 group">
-    <span className="font-bold tracking-tight text-[28px] leading-none select-none flex items-center">
-      <span className="text-neutral-950">Ne</span>
-      <NexoraX className="w-[26px] h-[26px] text-blue-600 mx-[1px]" />
-      <span className="text-neutral-950">ora</span>
+    <span className="font-bold tracking-tight text-[26px] leading-none select-none text-neutral-950">
+      NEXORA
     </span>
     <span className="hidden sm:inline-block text-[9px] font-semibold text-neutral-500 tracking-[0.18em] uppercase border-l border-neutral-200 pl-3">
       AI Solutions
