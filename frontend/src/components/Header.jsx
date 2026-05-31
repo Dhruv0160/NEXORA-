@@ -37,13 +37,18 @@ const NavDropdown = ({ label, items }) => {
 };
 
 const Logo = () => (
-  <Link to="/" className="flex items-center gap-2.5 group">
-    <img
-      src="https://customer-assets.emergentagent.com/job_nexora-ai-25/artifacts/w563sbi0_image.png"
-      alt="Nexora"
-      className="h-9 w-auto object-contain"
-    />
-    <span className="hidden sm:inline-block text-[9px] font-semibold text-neutral-500 tracking-[0.18em] uppercase border-l border-neutral-200 pl-2.5">
+  <Link to="/" className="flex items-center gap-3 group">
+    <span className="font-bold tracking-tight text-[28px] leading-none select-none">
+      <span className="text-neutral-950">Ne</span>
+      <span
+        className="text-blue-600 inline-block mx-[-1px]"
+        style={{ fontFamily: "'Space Grotesk', sans-serif", fontWeight: 800, fontStyle: "italic" }}
+      >
+        X
+      </span>
+      <span className="text-neutral-950">ora</span>
+    </span>
+    <span className="hidden sm:inline-block text-[9px] font-semibold text-neutral-500 tracking-[0.18em] uppercase border-l border-neutral-200 pl-3">
       AI Solutions
     </span>
   </Link>

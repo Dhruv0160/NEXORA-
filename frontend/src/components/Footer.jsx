@@ -51,13 +51,16 @@ const Footer = () => {
         <div className="grid lg:grid-cols-5 gap-10">
           <div className="lg:col-span-2">
             <div className="flex items-center gap-3">
-              <div className="bg-white rounded-xl p-2 inline-flex">
-                <img
-                  src="https://customer-assets.emergentagent.com/job_nexora-ai-25/artifacts/w563sbi0_image.png"
-                  alt="Nexora"
-                  className="h-8 w-auto object-contain"
-                />
-              </div>
+              <span className="font-bold tracking-tight text-[30px] leading-none">
+                <span className="text-white">Ne</span>
+                <span
+                  className="text-blue-400 inline-block mx-[-1px]"
+                  style={{ fontFamily: "'Space Grotesk', sans-serif", fontWeight: 800, fontStyle: "italic" }}
+                >
+                  X
+                </span>
+                <span className="text-white">ora</span>
+              </span>
               <p className="text-[10px] uppercase tracking-[0.2em] text-neutral-500 border-l border-white/10 pl-3">
                 AI Solutions
               </p>
