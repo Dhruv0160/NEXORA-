@@ -245,7 +245,7 @@ export const processSteps = [
 
 export const offices = [
   { city: "Vadodara, India (HQ)", address: "FF-26 Sunmilan Complex, Near Waghodia Chowkdi, Waghodia Road, Vadodara - 390019", phone: "+91 99042 56613" },
-  { city: "Remote First", address: "Distributed team across India, UAE & SE Asia", phone: "hello@nexora.ai" }
+  { city: "Remote First", address: "Distributed team across India, UAE & SE Asia", phone: "help@nexora-digital.in" }
 ];
 
 export const blogPosts = [
@@ -288,7 +288,7 @@ export const social = {
   linkedin: "https://www.linkedin.com/in/nexora-digital-63893b3a4/",
   twitter: "https://twitter.com/Nexoradigitall",
   instagram: "https://www.instagram.com/nexoradigital92",
-  email: "hello@nexora.ai",
+  email: "help@nexora-digital.in",
   phone: "+91 99042 56613",
   whatsapp: "https://wa.me/919904256613"
 };

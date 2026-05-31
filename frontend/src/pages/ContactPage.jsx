@@ -105,8 +105,8 @@ const ContactPage = () => {
             <div className="bg-gradient-to-br from-violet-600 via-indigo-600 to-fuchsia-600 text-white rounded-3xl p-8 shadow-xl shadow-violet-200">
               <h3 className="text-xl font-bold">Quick contact</h3>
               <div className="mt-5 space-y-4">
-                <a href="mailto:hello@nexora.ai" className="flex items-center gap-3 hover:opacity-90">
-                  <Mail className="w-5 h-5" /> hello@nexora.ai
+                <a href="mailto:help@nexora-digital.in" className="flex items-center gap-3 hover:opacity-90">
+                  <Mail className="w-5 h-5" /> help@nexora-digital.in
                 </a>
                 <a href="tel:+919904256613" className="flex items-center gap-3 hover:opacity-90">
                   <Phone className="w-5 h-5" /> +91 99042 56613
