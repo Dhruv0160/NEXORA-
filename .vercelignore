@@ -1,0 +1,7 @@
+# Vercel ignores the backend folder — this app is frontend-only.
+# Everything Vercel needs lives inside /frontend.
+backend
+**/__pycache__
+*.pyc
+.venv
+.python-version
