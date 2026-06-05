@@ -1,0 +1,9 @@
+{
+  "short_name": "Nexora",
+  "name": "Nexora — AI Solutions",
+  "icons": [],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#2563EB",
+  "background_color": "#ffffff"
+}
